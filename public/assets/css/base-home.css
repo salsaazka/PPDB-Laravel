@@ -36,3 +36,11 @@ body {
 .banner .container{
     padding-right: 40rem !important;
 }
+
+.info{
+    margin-top: -3rem;
+}
+
+.jurusan{
+    margin-top: 2.5rem;
+}
