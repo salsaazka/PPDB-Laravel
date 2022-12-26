@@ -17,6 +17,29 @@ class PpdbController extends Controller
         //
     }
 
+    
+    public function auth(Request$request)
+    {
+        $request->validate([
+            //required data harus diisi
+            'username' => 'required|exists:users,username',
+            'password' => 'required',
+        ],
+        [
+            'username.exists' => "Username ini tidak tersedia"
+            //username akan di cek ada atau tidak di database kalau tidak ada akan diberi pesan
+        ]);
+
+        $user = $request->only('username', 'password');
+        //auth fitur untuk menyimpan data dari login user 
+        if (Auth::attempt($user)) {
+            return redirect()->route('');
+        } else {
+            return redirect('/')->with('fail', 'Gagal login, silahkan periksa dan coba lagi!');
+        }
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

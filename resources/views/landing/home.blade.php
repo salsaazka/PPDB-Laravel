@@ -48,45 +48,6 @@
             </div>
         </nav> 
 
-        {{-- <nav class="navbar navbar-expand-lg bg-transparant">
-            <div class="container bg-light py-2 px-5 rounded-pill fixed-top">
-                <a class="navbar-brand" href="#">
-                    <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" srcset="" style="width: 30px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-1 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link " style="color: black" href="#beranda">Beranda</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#jurusan">Jurusan</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link " style="color: black" href="#tkami">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#testimoni">Testimoni</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#hub">Hubungi Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#login">Login</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav> --}}
-        {{-- End Navbar --}}
-
         {{-- Main Content --}}
 
         {{-- Banner --}}
@@ -152,31 +113,32 @@
                 <div class="your-class">
                     <div class="card bg-light p-5 me-2">
                         <p class="text-dark">
-                            <h4 class="">PPLG</h4>
+                            <h5 style="color: #02225B"><b>PPLG</b></h5>
+                            <h4>  Pengembangan Perangkat Lunak dan Gim</h4>
                         </p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
-                        impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
-                        magni necessitatibus voluptas?
+                        <p class="text-muted"><b>Keunggulan</b></p>
+                        Desktop Programming, Web Programming, Mobile Programming, Businnes Analyst, Database Administration.
                     </div>
                    <div class="card bg-light p-5 me-2">
                         <p class="text-dark">
-                            <h4 class="">TJKT</h4>
+                            <h5 style="color: #02225B">TJKT</h5>
+                            <p class="text-muted"><b>Keunggulan</b></p>
+                            Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi internasional seperti CNAP (Cisco Networking Academy Program) dan CNA (Mikrotik Certified Network Associate)
                         </p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
-                        impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
-                        magni necessitatibus voluptas?
+                        
                     </div>
                    <div class="card bg-light p-5 me-2">
                         <p class="text-dark">
-                            <h4 class="">DKV</h4>
+                            <h5 style="color: #02225B">DKV</h5>
+                            <p class="text-muted"><b>Keunggulan</b></p>
+                            Lulusan dapat memiliki kesempata kerja yang luas dibidang periklanan, production house, radio & televisi, studio foto, percetakan grafis, corporate brand identifty, penerbit majalah/koran, dll.
                         </p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
-                        impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
-                        magni necessitatibus voluptas?
+                        
                     </div>
                    <div class="card bg-light p-5 me-2">
                         <p class="text-dark">
-                            <h4 class="">MPLB</h4>
+                            <h5 style="color: #02225B">MPLB</h5>
+                            <p class="text-muted"><b>Keunggulan</b></p>
                         </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
@@ -184,7 +146,8 @@
                     </div>
                     <div class="card bg-light p-5 me-2">
                         <p class="text-dark">
-                            <h4 class="">HTL</h4>
+                            <h5 style="color: #02225B">HTL</h5>
+                            <p class="text-muted"><b>Keunggulan</b></p>
                         </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
@@ -192,7 +155,8 @@
                     </div>
                     <div class="card bg-light p-5 me-2">
                         <p class="text-dark">
-                            <h4 class="">KLN</h4>
+                            <h5 style="color: #02225B">KLN</h5>
+                            <p class="text-muted"><b>Keunggulan</b></p>
                         </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
@@ -221,7 +185,7 @@
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: true
@@ -230,8 +194,8 @@
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {

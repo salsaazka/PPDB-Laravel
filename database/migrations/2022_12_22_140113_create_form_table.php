@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('no_telp');
             $table->string('no_telpA');
             $table->string('no_telpB');
+            $table->string('referensi');
+            $table->enum('role', ['admin', 'user']);
             $table->timestamps();
         });
     }
