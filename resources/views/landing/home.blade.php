@@ -11,36 +11,33 @@
         {{-- Navbar --}}
         <nav class="navbar navbar-expand-lg bg-transparant">
             <div class="container bg-light py-2 px-5 rounded-pill fixed-top">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" srcset="" style="width: 30px">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link " style="color: black" href="#beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link" style="color: black" href="#jurusan">Jurusan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link " style="color: black" href="#tkami">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#testimoni">Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#hub">Hubungi Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#login">Login</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -56,20 +53,19 @@
 
         {{-- Banner --}}
 
-        <div class="banner card bg-dark text-white w-100 rounded-0" style="margin-top: -1rem">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/017.webp" class="banner-img" alt="Stony Beach" />
+        <div class="banner card bg-dark text-white w-100 rounded-0" style="margin-top: -1rem" id="beranda">
+            <img src="{{ asset('assets/img/employees/gedung boxies.jpeg') }}" class="banner-img" alt="Stony Beach" />
             <div class="card-img-overlay d-flex flex-column justify-content-center"
                 style="background-color: rgba(0, 0, 0, 0.3)">
                 <div class="container">
                     <h1 class="banner-title">PPDB TP 2023-2024</h1>
                     <h1 class="banner-title">SMK Wikrama Bogor</h1>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus libero iusto fuga in
-                        voluptatem obcaecati tempora, eius ut cupiditate, ex cum quidem placeat corrupti illum recusandae
-                        beatae atque. Provident!
+                    <p class="card-text pt-2">
+                       Ayo! Segera daftarkan dirimu ke SMK WIkrama dengan cara klik <b>PENDAFTRAN PPDB</b> dibawah ini!
+                       <b>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah</b>
                     </p>
-                    <a href="" class="btn btn-warning rounded-0 p-3 mt-3 text-white">
-                        Pendaftaran PPDB
+                    <a href="/form" class="btn btn-warning rounded-0 p-3 mt-3 text-white">
+                        PENDAFTARAN PPDB
                     </a>
                 </div>
             </div>
@@ -83,14 +79,23 @@
             <div class="info card shadow">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col">
-                            <center>1</center>
+                        <div class="col-12 col-md-4">
+                            <center>
+                                <h4><b>MOTTO</b></h4>
+                                <p>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah</p>
+                            </center>
                         </div>
-                        <div class="col">
-                            <center>1</center>
+                        <div class="col-12 col-md-4">
+                            <center>
+                                <h4><b>AFIRMASI</b></h4>
+                                <p>Padamu negeri- kami berjanji- lulus Wikrama siap membangun negeri!</p>
+                            </center>
                         </div>
-                        <div class="col">
-                            <center>1</center>
+                        <div class="col-12 col-md-4">
+                            <center>
+                                <h4><b>ATTITUDE</b></h4>
+                                <p>Aku ada lingkunganku bahagia</p>
+                            </center>
                         </div>
                     </div>
 
@@ -101,11 +106,15 @@
         {{-- End Info --}}
 
         {{-- Jurusan --}}
-        <div class="container">
-            <div class="jurusan">
-                <h2>Jurusan</h2>
+        <div id="jurusan" class="container">
+            <div class="jurusan" >
+                
+                    <h2>Jurusan</h2>
                 <div class="your-class">
-                    <div class="card bg-black p-5 me-2">
+                    <div class="card bg-light p-5 me-2">
+                        <p class="text-dark">
+                            <h4 class="">PPLG</h4>
+                        </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
@@ -152,14 +161,14 @@
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 2,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
