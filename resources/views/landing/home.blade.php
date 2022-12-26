@@ -9,7 +9,46 @@
     <div>
 
         {{-- Navbar --}}
-        <nav class="navbar navbar-expand-lg bg-transparant">
+
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" srcset="" style="width: 30px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link " style="color: black" href="#beranda">Beranda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#jurusan">Jurusan</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " style="color: black" href="#tkami">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#testimoni">Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#hub">Hubungi Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black" href="#login">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+
+        {{-- <nav class="navbar navbar-expand-lg bg-transparant">
             <div class="container bg-light py-2 px-5 rounded-pill fixed-top">
                 <a class="navbar-brand" href="#">
                     <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" srcset="" style="width: 30px">
@@ -24,9 +63,11 @@
                         <li class="nav-item">
                             <a class="nav-link " style="color: black" href="#beranda">Beranda</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" style="color: black" href="#jurusan">Jurusan</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link " style="color: black" href="#tkami">Tentang Kami</a>
                         </li>
@@ -39,14 +80,11 @@
                         <li class="nav-item">
                             <a class="nav-link" style="color: black" href="#login">Login</a>
                         </li>
+
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
         {{-- End Navbar --}}
 
         {{-- Main Content --}}
@@ -64,6 +102,7 @@
                        Ayo! Segera daftarkan dirimu ke SMK WIkrama dengan cara klik <b>PENDAFTRAN PPDB</b> dibawah ini!
                        <b>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah</b>
                     </p>
+
                     <a href="/form" class="btn btn-warning rounded-0 p-3 mt-3 text-white">
                         PENDAFTARAN PPDB
                     </a>
@@ -81,19 +120,19 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <center>
-                                <h4><b>MOTTO</b></h4>
+                                <h5><b>MOTTO</b></h5>
                                 <p>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah</p>
                             </center>
                         </div>
                         <div class="col-12 col-md-4">
                             <center>
-                                <h4><b>AFIRMASI</b></h4>
+                                <h5><b>AFIRMASI</b></h5>
                                 <p>Padamu negeri- kami berjanji- lulus Wikrama siap membangun negeri!</p>
                             </center>
                         </div>
                         <div class="col-12 col-md-4">
                             <center>
-                                <h4><b>ATTITUDE</b></h4>
+                                <h5><b>ATTITUDE</b></h5>
                                 <p>Aku ada lingkunganku bahagia</p>
                             </center>
                         </div>
@@ -119,27 +158,42 @@
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-black p-5 me-2">
+                   <div class="card bg-light p-5 me-2">
+                        <p class="text-dark">
+                            <h4 class="">TJKT</h4>
+                        </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-black p-5 me-2">
+                   <div class="card bg-light p-5 me-2">
+                        <p class="text-dark">
+                            <h4 class="">DKV</h4>
+                        </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-black p-5 me-2">
+                   <div class="card bg-light p-5 me-2">
+                        <p class="text-dark">
+                            <h4 class="">MPLB</h4>
+                        </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-black p-5 me-2">
+                    <div class="card bg-light p-5 me-2">
+                        <p class="text-dark">
+                            <h4 class="">HTL</h4>
+                        </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-black p-5 me-2">
+                    <div class="card bg-light p-5 me-2">
+                        <p class="text-dark">
+                            <h4 class="">KLN</h4>
+                        </p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
