@@ -26,7 +26,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #e80102;
+    color: #ffc107;
 }
 
 @media (min-width: 768px) {
@@ -37,11 +37,11 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #e80102;
+    color: #ffc107;
 }
 
 .navbar-light .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25px #e80102 !important;
+    box-shadow: 0 0 0 0.25px #ffc107 !important;
 }
 
 .navbar {
@@ -64,7 +64,7 @@ body {
 
 .navbar .navbar-brand .logoFan {
     width: 100%;
-    max-width: 28px;
+    max-width: 42px;
 }
 
 .img-profile {
@@ -126,7 +126,7 @@ body {
     padding-right: 40rem !important;
 }
 
-.banner .btn{
+.banner .btn {
     padding: 1rem;
 }
 
@@ -140,28 +140,33 @@ body {
     .banner .container {
         padding-right: 20rem !important;
     }
+
     .banner img {
-    height: 650px !important;
-}
+        height: 650px !important;
+    }
 }
 
 @media (max-width: 991px) {
     .banner .container {
         padding-right: 10rem !important;
     }
+
     .banner img {
         height: 600px !important;
     }
+
     .banner .banner-title {
         font-size: 42px;
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 0;
     }
-    .banner .card-text{
+
+    .banner .card-text {
         font-size: 15px;
     }
-    .banner .btn{
+
+    .banner .btn {
         padding: .8rem;
         font-size: 15px;
     }
@@ -171,19 +176,23 @@ body {
     .banner .container {
         padding-right: 7.5rem !important;
     }
+
     .banner img {
         height: 550px !important;
     }
+
     .banner .banner-title {
         font-size: 36px;
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 0;
     }
-    .banner .card-text{
+
+    .banner .card-text {
         font-size: 14px;
     }
-    .banner .btn{
+
+    .banner .btn {
         padding: .6rem;
         font-size: 14px;
     }
@@ -193,19 +202,23 @@ body {
     .banner .container {
         padding-right: 6rem !important;
     }
+
     .banner img {
         height: 500px !important;
     }
+
     .banner .banner-title {
         font-size: 28px;
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 0;
     }
-    .banner .card-text{
+
+    .banner .card-text {
         font-size: 12px;
     }
-    .banner .btn{
+
+    .banner .btn {
         padding: .6rem;
         font-size: 12px;
     }
@@ -215,19 +228,23 @@ body {
     .banner .container {
         padding-right: 3rem !important;
     }
+
     .banner img {
         height: 450px !important;
     }
+
     .banner .banner-title {
         font-size: 24px;
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 0;
     }
-    .banner .card-text{
+
+    .banner .card-text {
         font-size: 11px;
     }
-    .banner .btn{
+
+    .banner .btn {
         padding: .6rem;
         font-size: 11px;
     }
@@ -241,4 +258,30 @@ body {
 
 .jurusan {
     margin-top: 2.5rem;
+}
+
+
+.text-head h6 {
+    color: #ffc107;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.text-head h6:after,
+.text-head h6:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ffc107;
+    top: 50%;
+}
+
+.text-head h6:after {
+    right: 120%;
+}
+
+.text-head h6:before {
+    left: 120%;
 }

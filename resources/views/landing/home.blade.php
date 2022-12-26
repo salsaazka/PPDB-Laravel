@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-md navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" srcset="" style="width: 30px">
+                    <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" class="logoFan">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -21,32 +21,32 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-1 mb-lg-0 ">
+                    <ul class="navbar-nav ms-auto mb-1 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link " style="color: black" href="#beranda">Beranda</a>
+                            <a class="nav-link" href="#" id="home">Beranda</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#jurusan">Jurusan</a>
+                            <a class="nav-link" href="#jurusan" id="juru">Jurusan</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " style="color: black" href="#tkami">Tentang Kami</a>
+                            <a class="nav-link " href="#tkami">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#testimoni">Testimoni</a>
+                            <a class="nav-link" href="#testimoni">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#hub">Hubungi Kami</a>
+                            <a class="nav-link" href="#hub">Hubungi Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color: black" href="#login">Login</a>
+                            <a class="nav-link" href="#login">Login</a>
                         </li>
 
                     </ul>
                 </div>
             </div>
-        </nav> 
+        </nav>
 
         {{-- Main Content --}}
 
@@ -75,7 +75,7 @@
 
         {{-- Info --}}
 
-        <div class="container">
+        <div class="container mb-5">
             <div class="info card shadow">
                 <div class="card-body">
                     <div class="row">
@@ -108,10 +108,13 @@
         {{-- Jurusan --}}
         <div id="jurusan" class="container">
             <div class="jurusan" >
-                
+
+                <div class="text-head text-center mb-4">
                     <h2>Jurusan</h2>
+                    <h6>SMK Wikrama Bogor</h6>
+                </div>
                 <div class="your-class">
-                    <div class="card bg-light p-5 me-2">
+                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B"><b>PPLG</b></h5>
                             <h4>  Pengembangan Perangkat Lunak dan Gim</h4>
@@ -119,23 +122,23 @@
                         <p class="text-muted"><b>Keunggulan</b></p>
                         Desktop Programming, Web Programming, Mobile Programming, Businnes Analyst, Database Administration.
                     </div>
-                   <div class="card bg-light p-5 me-2">
+                   <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">TJKT</h5>
                             <p class="text-muted"><b>Keunggulan</b></p>
                             Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi internasional seperti CNAP (Cisco Networking Academy Program) dan CNA (Mikrotik Certified Network Associate)
                         </p>
-                        
+
                     </div>
-                   <div class="card bg-light p-5 me-2">
+                   <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">DKV</h5>
                             <p class="text-muted"><b>Keunggulan</b></p>
                             Lulusan dapat memiliki kesempata kerja yang luas dibidang periklanan, production house, radio & televisi, studio foto, percetakan grafis, corporate brand identifty, penerbit majalah/koran, dll.
                         </p>
-                        
+
                     </div>
-                   <div class="card bg-light p-5 me-2">
+                   <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">MPLB</h5>
                             <p class="text-muted"><b>Keunggulan</b></p>
@@ -144,7 +147,7 @@
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-light p-5 me-2">
+                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">HTL</h5>
                             <p class="text-muted"><b>Keunggulan</b></p>
@@ -153,7 +156,7 @@
                         impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
                         magni necessitatibus voluptas?
                     </div>
-                    <div class="card bg-light p-5 me-2">
+                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">KLN</h5>
                             <p class="text-muted"><b>Keunggulan</b></p>
@@ -179,7 +182,7 @@
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 2,
+  slidesToShow: 2.1,
   slidesToScroll: 1,
   responsive: [
     {
@@ -205,10 +208,38 @@
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+    <script>
+        setInterval(function(){
+            $(document).ready(function(){
+            var url = window.location.href;
+            if(url.indexOf('#jurusan') != -1){
+                $('#juru').addClass('active');
+                $('#home').removeClass('active');
+            } else if(url.indexOf('#') != -1){
+                $('#home').addClass('active');
+                $('#juru').removeClass('active');
+            }
+        });
+        }, 100);
     </script>
 @endsection
