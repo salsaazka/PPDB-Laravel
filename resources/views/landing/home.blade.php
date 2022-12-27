@@ -12,7 +12,7 @@
 
         <nav class="navbar navbar-expand-md navbar-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" id="#">
                     <img src="{{ asset('assets/img/employees/wikrama.jpeg') }}" alt="" class="logoFan">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,11 +23,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-1 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="home">Beranda</a>
+                            <a class="nav-link" href="#" >Beranda</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#jurusan" id="juru">Jurusan</a>
+                            <a class="nav-link" href="#jurusan" >Jurusan</a>
                         </li>
 
                         <li class="nav-item">
@@ -52,8 +52,8 @@
 
         {{-- Banner --}}
 
-        <div class="banner card bg-dark text-white w-100 rounded-0" style="margin-top: -1rem" id="beranda">
-            <img src="{{ asset('assets/img/employees/gedung boxies.jpeg') }}" class="banner-img" alt="Stony Beach" />
+        <div class="banner card bg-dark text-white w-100 rounded-0" style="margin-top: -1rem" >
+            <img src="{{ asset('assets/img/employees/gedung boxies.jpeg') }}" class="banner-img" alt="" />
             <div class="card-img-overlay d-flex flex-column justify-content-center"
                 style="background-color: rgba(0, 0, 0, 0.3)">
                 <div class="container">
@@ -106,14 +106,14 @@
         {{-- End Info --}}
 
         {{-- Jurusan --}}
-        <div id="jurusan" class="container mb-5">
+        <div class="container mb-5">
             <div class="jurusan" >
 
-                <div class="text-head text-center mb-4">
+                <div class="text-head text-center mb-4"  >
                     <h2>Jurusan</h2>
                     <h6>SMK Wikrama Bogor</h6>
                 </div>
-                <div class="your-class">
+                <div class="your-class" id="jurusan">
                     <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B"><b>PPLG</b></h5>
@@ -125,6 +125,7 @@
                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">TJKT</h5>
+                            <h4>r</h4>
                             <p class="text-muted"><b>Keunggulan</b></p>
                             Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi internasional seperti CNAP (Cisco Networking Academy Program) dan CNA (Mikrotik Certified Network Associate)
                         </p>
@@ -172,14 +173,14 @@
 
 
         {{-- About --}}
-        <div class="about d-flex w-100">
+        <div class="about d-flex w-100" id="tkami">
             <div class="w-50 main">
-                <img src="{{ asset('assets/img/employees/gedung boxies.jpeg') }}">
+                <img src="{{ asset('assets/img/employees/gedung wikrama.jpeg') }}">
             </div>
             <div class="w-50 h-100 secound d-flex flex-column">
                 <div class="h-50 row-1 d-flex">
                     <div class="w-50">
-                        <iframe src="https://www.youtube.com/embed/5dNgIftIO0I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BeIHXmayzIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="w-50">
                         <div class="text">
@@ -194,7 +195,7 @@
                         </div>
                     </div>
                     <div class="w-50">
-                        <iframe src="https://www.youtube.com/embed/5dNgIftIO0I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wag6WcgKO6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
