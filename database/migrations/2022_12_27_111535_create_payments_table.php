@@ -13,9 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cs', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('no_telp');
+            $table->bigInteger('ppdb_id');
+            $table->string('nm_bank');
+            $table->string('nm_rek');
+            $table->string('nominal');
+            $table->string('image');
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cs');
+        Schema::dropIfExists('payments');
     }
 };

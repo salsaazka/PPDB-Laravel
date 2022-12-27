@@ -15,6 +15,17 @@ return new class extends Migration
     {
         Schema::create('ppdbs', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id');
+            $table->string('name');
+            $table->string('nis');
+            $table->enum('jk', ['Laki-laki', 'Perempuan']);
+            $table->string('school');
+            $table->string('email');
+            $table->string('no_telp');
+            $table->string('no_telpA');
+            $table->string('no_telpB');
+            $table->string('referensi');
+            $table->enum('role', ['admin', 'user']);
             $table->timestamps();
         });
     }
