@@ -202,7 +202,75 @@
         </div>
         {{-- End About --}}
 
-        Testimoni
+        {{-- Testimoni --}}
+        <div class="testimoni container my-5">
+            <div class="text-head text-center mb-4"  >
+                <h2>Testimoni</h2>
+                <h6>SMK Wikrama Bogor</h6>
+            </div>
+            <div class="mt-5">
+                <div class="hr"></div>
+                <div class="slick">
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2018</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2019</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2020</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2021</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2022</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- End Testimoni --}}
+
+        {{-- Contact --}}
+        <div class="contact">
+            <div class="container">
+                <h2 class="text-center">Hubungi Kami</h2>
+                <div class="content mt-5 d-flex w-100">
+                    <div class="satu">
+                        <h5>Kontak Pendaftaran</h5>
+                        <p>Jl. Raya Wangun No.21, RT.01/RW.06, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
+                        <a href="#" class="text-light">CS 1: 085156293673</a><br>
+                        <a href="#" class="text-light">CS 1: 085156293673</a><br><br>
+                        <a href="/form" class="btn btn-warning rounded-pill p-2 text-white">
+                            Daftar Sekarang
+                        </a>
+                    </div>
+                    <div class="dua">
+                        <form action="">
+                            <div class="mb-3">
+                                <input type="text" class="form-control rounded px-3 py-3" id="exampleInputEmail1" placeholder="Nama Lengkap">
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex">
+                                    <input type="number" class="form-control rounded px-3 py-3 w-50 me-2" id="exampleInputEmail1" placeholder="+62">
+                                    <input type="email" class="form-control rounded px-3 py-3 w-50 ms-2" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control rounded px-3 py-3" placeholder="Pesan" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning rounded-pill p-2 text-white">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- End Contact --}}
 
         {{-- End Main Content --}}
 
@@ -213,37 +281,70 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $('.your-class').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 2.1,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2.1,
         slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+
+        $('.slick').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3.1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
