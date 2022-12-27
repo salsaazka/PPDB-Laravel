@@ -106,7 +106,7 @@
         {{-- End Info --}}
 
         {{-- Jurusan --}}
-        <div id="jurusan" class="container">
+        <div id="jurusan" class="container mb-5">
             <div class="jurusan" >
 
                 <div class="text-head text-center mb-4">
@@ -169,6 +169,37 @@
             </div>
         </div>
         {{-- End Jurusan --}}
+
+
+        {{-- About --}}
+        <div class="about d-flex w-100">
+            <div class="w-50 main">
+                <img src="{{ asset('assets/img/employees/gedung boxies.jpeg') }}">
+            </div>
+            <div class="w-50 h-100 secound d-flex flex-column">
+                <div class="h-50 row-1 d-flex">
+                    <div class="w-50">
+                        <iframe src="https://www.youtube.com/embed/5dNgIftIO0I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-50">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem maxime sapiente modi iste eaque voluptatum laboriosam architecto quam, sit hic, quod maiores facilis soluta neque veritatis voluptatem! Eveniet, exercitationem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-50 row-2 d-flex">
+                    <div class="w-50">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem maxime sapiente modi iste eaque voluptatum laboriosam architecto quam, sit hic, quod maiores facilis soluta neque veritatis voluptatem! Eveniet, exercitationem.</p>
+                        </div>
+                    </div>
+                    <div class="w-50">
+                        <iframe src="https://www.youtube.com/embed/5dNgIftIO0I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- End About --}}
 
         {{-- End Main Content --}}
 

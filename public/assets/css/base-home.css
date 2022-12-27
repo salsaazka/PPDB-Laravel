@@ -285,3 +285,37 @@ body {
 .text-head h6:before {
     left: 120%;
 }
+
+
+/* about */
+
+.about{
+    margin: 2rem 0;
+}
+
+.about .main img{
+    width: 100% !important;
+    height: 450px !important;
+}
+
+.about .secound{
+    height: 450px !important;
+}
+
+.about .secound .row-1{
+    height: 50% !important;
+}
+
+.about .secound iframe{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.about .secound .text{
+    text-align: center;
+    background-color: #211B3D;
+    color: #fff;
+    padding: 1rem;
+    width: 100% !important;
+    height: 100% !important;
+}
