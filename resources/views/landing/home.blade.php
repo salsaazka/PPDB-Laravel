@@ -173,25 +173,25 @@
 
 
         {{-- About --}}
-        <div class="about d-flex w-100" id="tkami">
-            <div class="w-50 main">
+        <div class="about d-flex w-100 flex-column flex-md-row" id="tkami">
+            <div class="w-100 w-md-50 main">
                 <img src="{{ asset('assets/img/employees/gedung wikrama.jpeg') }}">
             </div>
-            <div class="w-50 h-100 secound d-flex flex-column">
+            <div class="w-100 w-md-50 h-100 secound d-flex flex-column">
                 <div class="h-50 row-1 d-flex">
                     <div class="w-50">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/BeIHXmayzIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="w-50">
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem maxime sapiente modi iste eaque voluptatum laboriosam architecto quam, sit hic, quod maiores facilis soluta neque veritatis voluptatem! Eveniet, exercitationem.</p>
+                            <p>Acha I Love U</p>
                         </div>
                     </div>
                 </div>
                 <div class="h-50 row-2 d-flex">
                     <div class="w-50">
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem maxime sapiente modi iste eaque voluptatum laboriosam architecto quam, sit hic, quod maiores facilis soluta neque veritatis voluptatem! Eveniet, exercitationem.</p>
+                            <p>Sayang Acha</p>
                         </div>
                     </div>
                     <div class="w-50">
@@ -201,6 +201,8 @@
             </div>
         </div>
         {{-- End About --}}
+
+        Testimoni
 
         {{-- End Main Content --}}
 
