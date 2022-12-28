@@ -89,9 +89,9 @@
                     
                     <!-- Submit button -->
                     <center>
-                      <button type="submit" class="btn btn-warning btn-lg btn-block mt-3 mb-2 col-12 text-light">Registrasi</button>
+                      {{-- <button type="submit" class="btn btn-warning btn-lg btn-block mt-3 mb-2 col-12 text-light">Registrasi</button> --}}
                     </center>
-                    
+                    <button type="submit" href="/ppdb/pdf" class="btn btn-warning  btn-lg btn-block mt-3 mb-2 col-12 text-light" target="_blank">Registrasi</button>
                     </form>
             </div>    
           </div>

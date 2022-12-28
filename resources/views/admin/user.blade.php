@@ -18,10 +18,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>a</td>
+                        <td scope="row"></td>
                         <td>b</td>
                         <td>v</td>
                         <td>d</td>
+                        <td>e</td>
                         <td>e</td>
                     </tr>
                     <tr>

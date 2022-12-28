@@ -14,7 +14,7 @@ Route::post('/store', [ContactController::class, 'store'])->name('store');
 Route::get('/auth/register', [PpdbController::class, 'index'])->name('index');
 Route::get('/create', [PpdbController::class, 'create'])->name('create');
 Route::post('/store', [PpdbController::class, 'store'])->name('store');
-
+Route::get('/ppdb/pdf', [PpdbController::class, 'createPDF']);
 
 
 Route::get('/auth/login', function (){
