@@ -9,16 +9,16 @@ class Ppdb extends Model
 {
     use HasFactory;
     protected $fillable =[
-        'user_id',
+        // 'user_id',
         'name',
-        'nis',
+        'nisn',
         'jk',
         'school',
         'sch',
         'email',
         'no_telp',
         'no_telpA',
-        'no_telB',
+        'no_telpB',
         'referensi',
         'role'
     ];

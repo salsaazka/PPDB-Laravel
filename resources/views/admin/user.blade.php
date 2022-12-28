@@ -1,6 +1,6 @@
 @extends('layouts.base-admin')
 
-@section('title', 'User Management')
+@section('title', '')
 
 @section('content')
     <div>
@@ -8,11 +8,12 @@
             <table id="userTable" class="tables" style="width:100%">
                 <thead>
                     <tr>
-                        <th style="width: 5%">#</th>
-                        <th style="width: 30%">Gambar</th>
-                        <th style="width: 30%">Judul</th>
-                        <th style="width: 30%">Kata - Kata</th>
-                        <th style="width: 5%">Aksi</th>
+                        <th style="width: 5%">No</th>
+                        <th style="width: 10%">Nomor Registrasi</th>
+                        <th style="width: 20%">Nama</th>
+                        <th style="width: 10%">Bukti Pembayaran</th>
+                        <th style="width: 10%">Detail Pembayaran</th>
+                        <th style="width: 10%">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>

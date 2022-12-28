@@ -10,13 +10,13 @@
                     <h4 class="pt-3 d-flex justify-content-center"><strong>Form Pendaftaran PPDB</strong></h4>
                     <h6 class="text-muted d-flex justify-content-center">SMK Wikrama Bogor TP. 2023-2024</h6>
                       <form action="{{ route('store') }}" method="POST">
-                        @csrf              @method('POST')
+                        @csrf                    @method('POST')
                         
                         
                       <div class="row mt-3 mb-3">
                         <div class="form-outline mt-4 mb-2 col-6">
                           <label class="form-label" >NISN</label>
-                          <input type="number" name="nis"  class="form-control " placeholder="Masukkan NISN" />
+                          <input type="number" name="nisn"  class="form-control " placeholder="Masukkan NISN" />
                         </div>
               
                       <div class="form-outline mt-3 mb-2 pt-2 col-6">
@@ -64,12 +64,12 @@
                     <div class="row mb-3">
                       <div class="form-outline col-6 mt-3 mb-3">
                           <label class="form-label" >Nomor HP Ayah</label>
-                          <input type="number" name="no_telp" class="form-control " placeholder="Contoh: 08..." />
+                          <input type="number" name="no_telpA" class="form-control " placeholder="Contoh: 08..." />
                       </div>
 
                        <div class="form-outline col-6 mt-3 mb-3">
                           <label class="form-label" >Nomor HP Ibu</label>
-                          <input type="number" name="no_telp" class="form-control " placeholder="Contoh: 08..." />
+                          <input type="number" name="no_telpB" class="form-control " placeholder="Contoh: 08..." />
                        </div>
                     </div>
                     

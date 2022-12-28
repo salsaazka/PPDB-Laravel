@@ -30,7 +30,7 @@ class PpdbController extends Controller
         ]);
 
         Ppdb::create([
-            'user_id' => Auth::user()->id,
+            // 'user_id' => Auth::user()->id,
             'name' => $request->name,
             'nisn' => $request->nisn,
             'jk' => $request->jk,
@@ -39,10 +39,15 @@ class PpdbController extends Controller
             'email' =>$request->email,
             'no_telp'=>$request->no_telp,
             'no_telpA' =>$request->no_telpA,
+            'no_telpB' =>$request->no_telpB,
             'referensi' =>$request->referensi,
         ]);
         return redirect()->route('index')->with('success', 'Anda berhasil register!');
 
+        User::create([
+            'email'=>$request->email,
+            'password' =>$request->password,
+        ]);
     }
 
    
