@@ -6,7 +6,7 @@ use App\Models\Ppdb;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use PDF;
-use App\Exports\BorrowsExport;
+use App\Exports\PpdbExport;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -50,20 +50,20 @@ class PpdbController extends Controller
             'referensi' =>$request->referensi,
         ]);
 
-        $user = [
-            'ppdb_id' => Ppdb::latest()->first()->id,
-            'email' => $request->email,
-            'password' => '12345678',
-        ];
+        // User::create ([
+        //     'ppdb_id' => Ppdb::latest()->first()->id,
+        //     'email' => $request->email,
+        //     'password' => $request->password,
+        // ]);
 
-        DB::table('users')->insert($user);
+        // DB::table('users')->insert($user);
 
-        // $ppdb = Ppdb::orderBy('id', 'DESC')->get();
-
-        // $pdf = PDF::loadView('pdf-view', $ppdb->toArray());
+        // $Ppdb = Ppdb::orderBy('id', 'DESC')->get();
+        // view()->share('Ppdb',$Ppdb);
+        // $pdf = PDF::loadView('auth.pdf-view', $Ppdb->toArray());
         // return $pdf->download('ppdb.pdf');
 
-        return view('landing.home')->with('success', 'Anda berhasil membuat pesan!');
+        return view('auth.register')->with('success', 'Anda berhasil mengeksport PDF!');
 
     }
 
