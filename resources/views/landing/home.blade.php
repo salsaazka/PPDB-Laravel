@@ -242,9 +242,9 @@
                 @if (Session::get('success'))
                 <div class="alert alert-success w-100">
                    {{ Session::get('success') }}
-                </div>  
+                </div>
             @endif
-  
+
                 <h2 class="text-center">Hubungi Kami</h2>
                 <div class="content mt-5 d-flex w-100">
                     <div class="satu" id="hub">
@@ -257,7 +257,7 @@
                         </a>
                     </div>
                     <div class="dua">
-                        <form action="{{ route('index') }}" method="POST">
+                        <form action="{{ route('store') }}" method="POST">
                             @csrf
                             @method('POST')
                             <div class="mb-3">
