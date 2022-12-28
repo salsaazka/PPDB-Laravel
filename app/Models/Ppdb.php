@@ -14,6 +14,7 @@ class Ppdb extends Model
         'nis',
         'jk',
         'school',
+        'sch',
         'email',
         'no_telp',
         'no_telpA',
