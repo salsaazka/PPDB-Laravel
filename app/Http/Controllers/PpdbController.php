@@ -3,26 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ppdb;
-use Illuminate\Http\Request;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use PDF;
 use App\Exports\BorrowsExport;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class PpdbController extends Controller
 {
-    
+
     public function index()
     {
         return view('auth.register');
     }
 
-    
+
     public function create()
     {
         return view('auth.register');
     }
 
-   
+
     public function store(Request $request)
     {
         $request->validate([
@@ -44,13 +49,21 @@ class PpdbController extends Controller
             'no_telpB' =>$request->no_telpB,
             'referensi' =>$request->referensi,
         ]);
-        return redirect()->route('index')->with('success', 'Anda berhasil register!');
 
-        User::create([
-            'email'=>$request->email,
-            'password' =>$request->password,
-        ]);
-        return redirect()->route('index')->with('successAdd', 'Anda berhasil');
+        $user = [
+            'ppdb_id' => Ppdb::latest()->first()->id,
+            'email' => $request->email,
+            'password' => '12345678',
+        ];
+
+        DB::table('users')->insert($user);
+
+        // $ppdb = Ppdb::orderBy('id', 'DESC')->get();
+
+        // $pdf = PDF::loadView('pdf-view', $ppdb->toArray());
+        // return $pdf->download('ppdb.pdf');
+
+        return view('landing.home')->with('success', 'Anda berhasil membuat pesan!');
 
     }
 
@@ -66,15 +79,15 @@ class PpdbController extends Controller
          // download PDF file with download method
          return $pdf->download('ppdb.pdf');
      }
- 
 
-   
+
+
     public function show(Ppdb $ppdb)
     {
         //
     }
 
-    
+
     public function edit(Ppdb $ppdb)
     {
         //
@@ -85,7 +98,7 @@ class PpdbController extends Controller
         //
     }
 
-    
+
     public function destroy(Ppdb $ppdb)
     {
         //

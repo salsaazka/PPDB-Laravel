@@ -36,7 +36,7 @@ class ContactController extends Controller
             'no_telp'=> $request->no_telp,
             'email'=> $request->email,
         ]);
-        return redirect()->route('index')->with('success', 'Anda berhasil membuat pesan!');
+        return view('landing.home')->with('success', 'Anda berhasil membuat pesan!');
 
     }
 
