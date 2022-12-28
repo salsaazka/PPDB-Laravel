@@ -7,10 +7,12 @@ use App\http\controllers\PpbdController;
 
 //Landing page
 // Route::get('/', function () {
+
 //     return view('landing.home');
 // });
 
 Route::get('/', [ContactController::class, 'index'])->name('index');
+Route::get('/create', [ContactController::class, 'create'])->name('create');
 Route::post('/store', [ContactController::class, 'store'])->name('store');
 
 

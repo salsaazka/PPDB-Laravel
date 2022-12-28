@@ -257,7 +257,7 @@
                         </a>
                     </div>
                     <div class="dua">
-                        <form action="{{ route('index') }}" method="POST">
+                        <form action="/" method="POST">
                             @csrf
                             @method('POST')
                             <div class="mb-3">
