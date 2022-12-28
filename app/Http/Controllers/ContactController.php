@@ -14,28 +14,30 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        return view('landing.home');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function create()
     {
-        //
+       return view('landing.home');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'=>'required|min:3',
+            'message'=> 'required|min:5'
+
+        ]);
+        Contact::create([
+            'name'=> $request->name,
+            'message'=> $request->message,
+            'no_telp'=> $request->no_telp,
+            'email'=> $request->email,
+        ]);
+        return redirect->route('index')->with('success', 'Anda berhasil membuat pesan!');
+
     }
 
     /**

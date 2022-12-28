@@ -177,7 +177,7 @@
             <div class="w-100 w-md-50 main">
                 <img src="{{ asset('assets/img/employees/gedung wikrama.jpeg') }}">
             </div>
-            <div class="w-100 w-md-50 h-100 secound d-flex flex-column">
+            <div class="w-100 w-md-50 h-100 secound d-flex flex-column" id="tkami">
                 <div class="h-50 row-1 d-flex">
                     <div class="w-50">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/BeIHXmayzIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -208,7 +208,7 @@
                 <h2>Testimoni</h2>
                 <h6>SMK Wikrama Bogor</h6>
             </div>
-            <div class="mt-5">
+            <div class="mt-5" id="testimoni">
                 <div class="hr"></div>
                 <div class="slick">
                     <div class="desc">
@@ -239,30 +239,38 @@
         {{-- Contact --}}
         <div class="contact">
             <div class="container">
+                @if (Session::get('success'))
+                <div class="alert alert-success w-100">
+                   {{ Session::get('success') }}
+                </div>  
+            @endif
+  
                 <h2 class="text-center">Hubungi Kami</h2>
                 <div class="content mt-5 d-flex w-100">
-                    <div class="satu">
+                    <div class="satu" id="hub">
                         <h5>Kontak Pendaftaran</h5>
                         <p>Jl. Raya Wangun No.21, RT.01/RW.06, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
-                        <a href="#" class="text-light">CS 1: 085156293673</a><br>
-                        <a href="#" class="text-light">CS 1: 085156293673</a><br><br>
+                        CS 1: <a href="https://wa.me/6281909242411" class="text-light bold"><b>Hubungi Kami Disini</b></a><br>
+                        CS 2: <a href="https://wa.me/6281919242411" class="text-light"><b>Hubungi Kami Disini</b></a><br><br>
                         <a href="/form" class="btn btn-warning rounded-pill p-2 text-white">
                             Daftar Sekarang
                         </a>
                     </div>
                     <div class="dua">
-                        <form action="">
+                        <form action="{{ route('index') }}" method="POST">
+                            @csrf
+                            @method('POST')
                             <div class="mb-3">
-                                <input type="text" class="form-control rounded px-3 py-3" id="exampleInputEmail1" placeholder="Nama Lengkap">
+                                <input type="text" name="name" class="form-control rounded px-3 py-3" id="exampleInputEmail1" placeholder="Nama Lengkap">
                             </div>
                             <div class="mb-3">
                                 <div class="d-flex">
-                                    <input type="number" class="form-control rounded px-3 py-3 w-50 me-2" id="exampleInputEmail1" placeholder="+62">
-                                    <input type="email" class="form-control rounded px-3 py-3 w-50 ms-2" id="exampleInputEmail1" placeholder="Email">
+                                    <input type="number" name="no_telp" class="form-control rounded px-3 py-3 w-50 me-2" id="exampleInputEmail1" placeholder="+62">
+                                    <input type="email" name="email" class="form-control rounded px-3 py-3 w-50 ms-2" id="exampleInputEmail1" placeholder="Email">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control rounded px-3 py-3" placeholder="Pesan" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <textarea name="message" class="form-control rounded px-3 py-3" placeholder="Pesan" id="floatingTextarea2" style="height: 100px"></textarea>
                             </div>
                             <button type="submit" class="btn btn-warning rounded-pill p-2 text-white">Kirim Pesan</button>
                         </form>
