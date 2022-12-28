@@ -64,7 +64,7 @@
                        <b>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah</b>
                     </p>
 
-                    <a href="/register/auth" class="btn btn-warning rounded-0 p-3 mt-3 text-white">
+                    <a href="/auth/register" class="btn btn-warning rounded-0 p-3 mt-3 text-white">
                         PENDAFTARAN PPDB
                     </a>
                 </div>
