@@ -62,7 +62,7 @@ class PpdbController extends Controller
          view()->share('Ppdb',$Ppdb);
          // yang didalam petik nama yang ada di blade, $ ambil nama variable untuk models
          //kalau mau didashboard 'dashboard.pdf_view'
-         $pdf = PDF::loadView('pdf_view', $Ppdb->toArray());
+         $pdf = PDF::loadView('pdf-view', $Ppdb->toArray());
          // download PDF file with download method
          return $pdf->download('ppdb.pdf');
      }
