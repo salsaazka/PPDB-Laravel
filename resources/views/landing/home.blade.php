@@ -125,46 +125,52 @@
                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">TJKT</h5>
-                            <h4>r</h4>
+                            <h4>Teknik Jaringan Komputer dan Telekomunikasi</h4>
                             <p class="text-muted"><b>Keunggulan</b></p>
-                            Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi internasional seperti CNAP (Cisco Networking Academy Program) dan CNA (Mikrotik Certified Network Associate)
+                            Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi internasional seperti CNAP (Cisco Networking Academy Program) dan CNA (Mikrotik Certified Network Associate).
                         </p>
 
                     </div>
                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">DKV</h5>
+                            <h4>Desain Komunikasi Visual</h4>
                             <p class="text-muted"><b>Keunggulan</b></p>
                             Lulusan dapat memiliki kesempata kerja yang luas dibidang periklanan, production house, radio & televisi, studio foto, percetakan grafis, corporate brand identifty, penerbit majalah/koran, dll.
                         </p>
 
                     </div>
+                    <div class="card bg-light p-5 me-3">
+                        <p class="text-dark">
+                            <h5 style="color: #02225B">PMN</h5>
+                            <h4>Pemasaran</h4>
+                            <p class="text-muted"><b>Keunggulan</b></p>
+                        </p>
+                        Lulusan program ini diharuskan mampu membuat foto produk, desain, copy writing, dll. Kompetensi ini juga sering melakukan praktik diluar ruangan dengan melakukan jual-beli di cafe atau lingkungan sekitar sekolah.
+                    </div>
                    <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">MPLB</h5>
+                            <h4>Manajemen Perkantoran Lembaga Bisnis</h4>
                             <p class="text-muted"><b>Keunggulan</b></p>
                         </p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
-                        impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
-                        magni necessitatibus voluptas?
+                       Memiliki keunggulan seperti juara 2 lomba keterampilan siswa bidang lomba sekretaris tingkat provinsi tahun 2016 dan olimpiade sekretaris tingkat nasional tahun 2017.
                     </div>
                     <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">HTL</h5>
+                            <h4>Perhotelan</h4>
                             <p class="text-muted"><b>Keunggulan</b></p>
                         </p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
-                        impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
-                        magni necessitatibus voluptas?
+                       Mampu bekerja di departemen yang ada di hotel dengan kompetensi yang telah dimiliki dan poelajari.
                     </div>
                     <div class="card bg-light p-5 me-3">
                         <p class="text-dark">
                             <h5 style="color: #02225B">KLN</h5>
+                            <h4>Kuliner</h4>
                             <p class="text-muted"><b>Keunggulan</b></p>
                         </p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sit tenetur minima accusantium. In,
-                        impedit ipsa. Modi architecto magnam provident, blanditiis quidem earum animi obcaecati quod iste
-                        magni necessitatibus voluptas?
+                        Mampu bekerja diberbagai bidang jasa boga seperti restoran, hotel, rumah sakit, katering sesuai dengan minat dan bakat yang telah dipelajari.
                     </div>
                 </div>
             </div>
@@ -183,15 +189,17 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/BeIHXmayzIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="w-50">
-                        <div class="text">
-                            <p>Acha I Love U</p>
+                        <div class="text pt-5">
+                            <h5 class="text-warning">7 Kompetensi Keahlian SMK Wikrama Bogor</h5>
+                            <p>Mengenal 7 kompetensi yang ada di SMK Pusat Keunggulan SMK Wikrama Bogor</p>
                         </div>
                     </div>
                 </div>
                 <div class="h-50 row-2 d-flex">
                     <div class="w-50">
-                        <div class="text">
-                            <p>Sayang Acha</p>
+                        <div class="text pt-5">
+                            <h5 class="text-warning">Profi TEFA</h5>
+                            <p>Mengenal TEFA yang ada di SMK Pusat Keunggulan SMK Wikrama Bogor</p>
                         </div>
                     </div>
                     <div class="w-50">

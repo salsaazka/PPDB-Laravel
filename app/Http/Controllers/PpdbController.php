@@ -31,10 +31,17 @@ class PpdbController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
-            'nisn' => 'required|min:4',
             'name' => 'required|min:4',
-            'email' => 'required|min:8'
+            'nisn' => 'required|min:4',
+            'jk' => 'required',
+            'school' => 'required',
+            'email' => 'required|min:8',
+            'no_telp' => 'required|max:13',
+            'no_telpA' => 'required|max:13',
+            'no_telpB' => 'required|max:13',
+            'referensi' => 'required',
         ]);
 
         Ppdb::create([
@@ -58,9 +65,7 @@ class PpdbController extends Controller
         ];
 
         DB::table('users')->insert($user);
-
-
-        return view('auth.register')->with('success', 'Anda berhasil membuat akun!');
+        return redirect()->route('export.pdf')->with('success', 'Anda berhasil membuat akun!');
 
     }
 
@@ -70,14 +75,41 @@ class PpdbController extends Controller
          $Ppdb = Ppdb::orderBy('id', 'DESC')->first();
          view()->share('Ppdb',$Ppdb);
 
-         
-         $pdf = PDF::loadView('auth.pdf-view', $Ppdb->toArray());
+         $pdf = PDF::loadView('pdf-view', $Ppdb->toArray());
          // download PDF file with download method
          return $pdf->download('ppdb.pdf');
      }
 
 
+     public function login()
+     {
+        return view('auth.login');
 
+     }
+
+     public function auth(Request$request)
+     {
+         $request->validate([
+             //required data harus diisi
+             'email' => 'required|exists:users,email',
+             'password' => 'required',
+         ],
+         [
+             'email.exists' => "email ini tidak tersedia"
+             //email akan di cek ada atau tidak di database kalau tidak ada akan diberi pesan
+         ]);
+ 
+         $user = $request->only('email', 'password');
+         //auth fitur untuk menyimpan data dari login user 
+         if (Auth::attempt($user)) {
+             return redirect()->route('');
+         } else {
+             return redirect('/')->with('fail', 'Gagal login, silahkan periksa dan coba lagi!');
+         }
+ 
+     }
+
+     
     public function show(Ppdb $ppdb)
     {
         //

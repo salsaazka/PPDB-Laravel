@@ -13,7 +13,7 @@ class Guest
     {
          if(Auth::check()) {
             //kalau gak ada history login bakal dikembalikan ke halaman login dengan pesan error
-           return redirect()->route('')->with('notAllowed', 'Anda sudah login!');
+           return redirect()->route('auth.login')->with('notAllowed', 'Anda sudah login!');
            }
            return $next($request);      
     }

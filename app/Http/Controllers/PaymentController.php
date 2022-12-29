@@ -10,7 +10,7 @@ class PaymentController extends Controller
    
     public function index()
     {
-        //
+        return view('admin.user');
     }
 
     /**
@@ -20,7 +20,7 @@ class PaymentController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.payment');
     }
 
    

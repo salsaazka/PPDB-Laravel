@@ -19,7 +19,7 @@ return new class extends Migration
         $table->bigInteger('ppdb_id');
         $table->string('email');
         $table->string('password');
-        $table->enum('role', ['admin', 'user']);
+        $table->enum('role', ['user', 'admin']);
         $table->timestamps();
         });
     }

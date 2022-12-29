@@ -31,23 +31,29 @@
         </tr>
     </thead>
     <tbody >
-        @foreach ( $Ppdb as $a )
+       
         <tr>
-            <td>{{ $a['name'] }}</td>
-            <td>{{ $a['nisn'] }}</td>
-            <td>{{ $a['jk'] }}</td>
-            <td>{{ $a ['school']}}</td>
-            <td>{{ $a['sch'] }}</td>
-            <td>{{ $a['email'] }}</td>
-            <td>{{ $a['no_telp'] }}</td>
-            <td>{{ $a['no_telpA'] }}</td>
-            <td>{{ $a['no_telpB'] }}</td>
-            <td>{{ $a['referensi'] }}</td>
-             <td>{{ $a['password'] }}</td>
-            <td>{{ $a['email'] }}</td>
+            <td>{{ $Ppdb['name'] }}</td>
+            <td>{{ $Ppdb['nisn'] }}</td>
+            <td>{{ $Ppdb['jk'] }}</td>
+        </tr>
+        <tr>
+            <td>{{ $Ppdb['school'] }}</td>
+            <td>{{ $Ppdb['sch'] }}</td>
+            <td>{{ $Ppdb['email'] }}</td>
+        </tr>
+        <tr>
+            <td>{{ $Ppdb['no_telp'] }}</td>
+            <td>{{ $Ppdb['no_telpA'] }}</td>
+            <td>{{ $Ppdb['no_telpB'] }}</td>
+        </tr>
+        <tr>
+            <td>{{ $Ppdb['referensi'] }}</td>
+            <td>{{ $Ppdb['password'] }}</td>
+            <td>{{ $Ppdb['email'] }}</td>
         </tr>
        
-        @endforeach
+    
      <tbody>  
     </table>
 </body>

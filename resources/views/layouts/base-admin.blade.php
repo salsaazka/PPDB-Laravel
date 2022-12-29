@@ -31,7 +31,7 @@
         <div class="col-12 col-lg-3 col-navbar d-none d-xl-block">
 
             <aside class="sidebar">
-                <a href="#" class="sidebar-logo">
+                <a href="" class="sidebar-logo">
                     <div class="d-flex justify-content-start align-items-center">
                         <img src="{{ url('assets/img/global/logo-wk.png') }}" class="logo">
                         <span>PPDB Wikrama</span>
@@ -42,12 +42,12 @@
                     </button> --}}
                 </a>
 
-                <h5 class="sidebar-title"></h5>
+                <h5 class="sidebar-title">Hai</h5>
 
                 <!-- <a href="./index.html" class="sidebar-item" onclick="toggleActive(this)"> -->
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
 
-                <a href="#" class="sidebar-item" onclick="toggleActive(this)">
+                <a href="/admin/user" class="sidebar-item" onclick="toggleActive(this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 14H14V21H21V14Z" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -61,11 +61,12 @@
                     </svg>
 
                     <span>Dashboard</span>
+                   
                 </a>
 
-                <a href="/admin/user" class="sidebar-item active">
-                    <!-- <img src="./assets/img/global/users.svg" alt=""> -->
-
+                
+        
+                <a href="/admin/payment" class="sidebar-item" onclick="toggleActive (this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -84,6 +85,8 @@
 
                     <span>Pembayaran</span>
                 </a>
+          
+               
 
                 <a href="#" class="sidebar-item" onclick="toggleActive(this)">
                     <!-- <img src="./assets/img/global/log-out.svg" alt=""> -->
@@ -131,7 +134,7 @@
             <div class="content">    
                 <div class="card-body">
                     @yield('content')
-                    <p>Hai </p>
+                    
                 </div>
             </div>
         </div>

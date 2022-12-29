@@ -9,7 +9,16 @@
                     <div class="p-4">
                     <h4 class="pt-3 d-flex justify-content-center"><strong>Form Pendaftaran PPDB</strong></h4>
                     <h6 class="text-muted d-flex justify-content-center">SMK Wikrama Bogor TP. 2023-2024</h6>
-                      <form action="{{ route('store') }}" method="POST">
+                        @if ($errors->any())
+                          <div class="alert alert-danger">
+                           <ul>
+                             @foreach ($errors->all() as $error)
+                               <li>{{ $error }}</li>
+                             @endforeach
+                           </ul>
+                          </div>
+                         @endif
+                      <form action="/registrasi" method="POST">
                         @csrf                   
                          @method('POST')
                         
@@ -88,10 +97,7 @@
                     </div>
                     
                     <!-- Submit button -->
-                    <center>
-                      {{-- <button type="submit" class="btn btn-warning btn-lg btn-block mt-3 mb-2 col-12 text-light">Registrasi</button> --}}
-                    </center>
-                    <button type="submit" class="btn btn-warning  btn-lg btn-block mt-3 mb-2 col-12 text-light" target="_blank">Registrasi</button>
+                      <button type="submit" class="btn btn-warning btn-lg btn-block mt-3 mb-2 col-12 text-light">Registrasi</button>
                     </form>
             </div>    
           </div>
