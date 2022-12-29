@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Ppdb;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use PDF;
 use App\Exports\PpdbExport;
 use App\Http\Controllers\Controller;
@@ -50,32 +51,27 @@ class PpdbController extends Controller
             'referensi' =>$request->referensi,
         ]);
 
-        // User::create ([
-        //     'ppdb_id' => Ppdb::latest()->first()->id,
-        //     'email' => $request->email,
-        //     'password' => $request->password,
-        // ]);
+        $user = [
+            'ppdb_id' => Ppdb::latest()->first()->id,
+            'email' => $request->email,
+            'password' => Hash::make($request->nisn),
+        ];
 
-        // DB::table('users')->insert($user);
+        DB::table('users')->insert($user);
 
-        // $Ppdb = Ppdb::orderBy('id', 'DESC')->get();
-        // view()->share('Ppdb',$Ppdb);
-        // $pdf = PDF::loadView('auth.pdf-view', $Ppdb->toArray());
-        // return $pdf->download('ppdb.pdf');
 
-        return view('auth.register')->with('success', 'Anda berhasil mengeksport PDF!');
+        return view('auth.register')->with('success', 'Anda berhasil membuat akun!');
 
     }
 
      //pdf
      public function createPDF()
      {
-         $Ppdb = Ppdb::orderBy('date', 'DESC')->get();
-         // share Ppdb to view (ambil data) -> redirect ke halaman view sama seperti compact
+         $Ppdb = Ppdb::orderBy('id', 'DESC')->first();
          view()->share('Ppdb',$Ppdb);
-         // yang didalam petik nama yang ada di blade, $ ambil nama variable untuk models
-         //kalau mau didashboard 'dashboard.pdf_view'
-         $pdf = PDF::loadView('pdf-view', $Ppdb->toArray());
+
+         
+         $pdf = PDF::loadView('auth.pdf-view', $Ppdb->toArray());
          // download PDF file with download method
          return $pdf->download('ppdb.pdf');
      }

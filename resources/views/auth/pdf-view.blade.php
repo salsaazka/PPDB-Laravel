@@ -31,7 +31,7 @@
         </tr>
     </thead>
     <tbody >
-        @foreach ($ppdb $a )
+        @foreach ( $Ppdb as $a )
         <tr>
             <td>{{ $a['name'] }}</td>
             <td>{{ $a['nisn'] }}</td>

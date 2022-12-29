@@ -131,6 +131,7 @@
             <div class="content">    
                 <div class="card-body">
                     @yield('content')
+                    <p>Hai </p>
                 </div>
             </div>
         </div>

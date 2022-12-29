@@ -17,33 +17,38 @@
 <body>
     <div class="content-sign">
         <div class="d-flex flex row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-5" >
                 <div class="card">
                     <img src="{{ asset('assets/img/employees/foto login.jpg') }}" alt="" class="w-100">
                 </div>
             </div>
-            <div class="col-lg-6">
-                <form action="" method="POST" >
-                    <div class="card p-3">
-                        <h2>Login</h2>
-                        <p>Masuk ke Akun PPDB mu</p>
-                        <div class="d-flex flex-column mt-3">
-                            <div>
-                                <label for="">Email</label>
-                                <span class="fa fa-user p-2"></span>
-                                <input type="email" class="form-control" name="email" placeholder="Masukkan email terdaftar">
-                            </div>
-                            <div>
-                                <label for="">Password</label>
-                                <span class="fa fa-user p-2"></span>
-                                <input type="password" class="form-control" name="password" placeholder="Masukkan password anda">
-                                <span onclick="toggle('password')">
-                                <i class="fa fa-eye toggle-hide" onclick="myFunction(this)"></i></span>
-                            </div>
-                            <button type="submit" class="mt-4 btn btn-blue gradient sign d-glex justify-content-center align-items-center">Login</button>
-                        </div>
-                    </div>
-                </form>
+            <div class="col-md-12 col-lg-5 col-xl-6 mt-5 py-5 px-5 ">
+               <form action="" method="POST" class="">
+                    @method('POST')
+                     @csrf
+                     
+                      <!-- Email input -->
+                      <div class="form-outline mt-4 mb-4">
+                       <label class="form-label" >Email</label>
+                       <input type="text" name="email" class="form-control form-control-lg" />
+                     </div>
+           
+                     <!-- Password input -->
+                     <div class="form-outline mb-4">
+                       <label class="form-label" >Password</label>
+                       <input type="password" name="password" class="form-control form-control-lg" />
+                     </div>
+           
+                     <div class="d-flex justify-content-around align-items-center mb-4">
+                       <a href="/auth/register">Create Account?</a>
+                     </div>
+           
+                     <!-- Submit button -->
+                     <center>
+                       <button type="submit" class="btn btn-primary btn-lg btn-block ">Sign in</button>
+                     </center>
+                   
+                    </form>
             </div>
            
         </div>

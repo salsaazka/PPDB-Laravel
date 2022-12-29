@@ -17,90 +17,24 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {{-- @foreach ($users as $user )
                     <tr>
-                        <td scope="row"></td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                        <td>e</td>
+                        <td scope="row">{{ ++$i }}</td>
+                        <td>{{ $user->no_regis }}</td>
+                        <td>{{ $user->name }}</td>
+                        <td>{{ $user->image }}</td>
+                        <td></td>
+                        <td></td>
                     </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr><tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>e</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                        <td>v</td>
-                        <td>d</td>
-                        <td>s</td>
-                    </tr>
+                   @endforeach --}}
+                   <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                   </tr>
                 </tbody>
             </table>
         </div>
