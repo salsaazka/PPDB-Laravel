@@ -8,10 +8,12 @@ use Illuminate\Support\Facades\Auth;
 
 class PaymentController extends Controller
 {
-   
+
     public function index()
     {
-        return view('admin.user');
+        // payment get data
+        $payment = Payment::all();
+        return view('admin.user', compact('payment'));
     }
 
    public function userDash()
@@ -27,7 +29,7 @@ class PaymentController extends Controller
 
     public function create()
     {
-    
+
     }
 
     public function createPayment()
@@ -36,7 +38,7 @@ class PaymentController extends Controller
         return view('user.payment', compact('bayar'));
     }
 
-   
+
     public function store(Request $request)
     {
         $request->validate([
@@ -48,7 +50,7 @@ class PaymentController extends Controller
 
         $image = $request->file('image');
         $imgName = time().rand().'.'.$image->extension();
-       
+
         if(!file_exists(public_path('/assets/img/global/'.$image->getClientOriginalName()))){
             //set untuk menyimpan file nya
             $dPath = public_path('/assets/img/global/');
@@ -70,17 +72,17 @@ class PaymentController extends Controller
          return redirect()->route('createPayment')->with('Success', 'Bukti Pembayaran Anda sedang di proses');
     }
 
-   
+
     public function show(Payment $payment)
     {
-      
+
     }
 
-    public function edit($id)
-     {
-        $payment = Payment::where('id', $id)->first();
-        return view('admin.user', compact('payment'));
-     }
+    // public function edit($id)
+    //  {
+    //     $payment = Payment::where('id', $id)->first();
+    //     return view('admin.user', compact('payment'));
+    //  }
 
 
     public function data()
@@ -88,7 +90,7 @@ class PaymentController extends Controller
         $payment = Payment::all();
         return view('admin.user', compact('payment'))->with('i', (request()->input('page',1)-1));
     }
-    
+
     public function update(Request $request, Payment $payment)
     {
         $request->validate([
@@ -100,7 +102,7 @@ class PaymentController extends Controller
 
         $image = $request->file('image');
         $imgName = time().rand().'.'.$image->extension();
-       
+
         if(!file_exists(public_path('/assets/img/global/'.$image->getClientOriginalName()))){
             //set untuk menyimpan file nya
             $dPath = public_path('/assets/img/global/');
@@ -120,7 +122,7 @@ class PaymentController extends Controller
             'ppdb_id' => Auth::user()->ppdb_id,
          ]);
          return redirect()->route('userDash')->with('notSuccess', 'Bukti Pembayaran Anda ditolak oleh Admin');
-    
+
     }
 
     public function destroy(Payment $payment)
