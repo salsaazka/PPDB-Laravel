@@ -18,6 +18,11 @@
                            </ul>
                           </div>
                          @endif
+                         @if (Session::get('success'))
+                         <div class="alert alert-success w-100">
+                            {{ Session::get('success') }}
+                         </div>  
+                       @endif
                       <form action="/registrasi" method="POST">
                         @csrf                   
                          @method('POST')

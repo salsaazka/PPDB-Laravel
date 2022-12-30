@@ -42,12 +42,12 @@
                     </button> --}}
                 </a>
 
-                <h5 class="sidebar-title">Hai</h5>
+                <h5 class="sidebar-title"></h5>
 
                 <!-- <a href="./index.html" class="sidebar-item" onclick="toggleActive(this)"> -->
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
 
-                <a href="/admin/dashboard" class="sidebar-item" onclick="toggleActive(this)">
+                <a href="/user/dashboard" class="sidebar-item" onclick="toggleActive(this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 14H14V21H21V14Z" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -66,7 +66,7 @@
 
                 
         
-                <a href="/admin/user" class="sidebar-item" onclick="toggleActive (this)">
+                <a href="{{ route('createPayment') }}" class="sidebar-item" onclick="toggleActive (this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -83,7 +83,7 @@
                             stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    <span>Data Pembayaran</span>
+                    <span>Pembayaran</span>
                 </a>
           
                

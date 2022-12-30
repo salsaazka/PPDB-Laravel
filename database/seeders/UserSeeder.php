@@ -13,11 +13,7 @@ class UserSeeder extends Seeder
      * @return void
      */
     public function run()
-    {DB::table('users')->insert([
-        'name' => 'admin',
-        'email' => 'admin@gmail.com',
-        'email_verified_at' => $faker->date(),
-        'password' => Hash::make('admin123'),
-    ]);
+    {
+       
     }
 }

@@ -11,8 +11,10 @@ class Payment extends Model
     protected $fillable =[
         'ppdb_id',
         'nm_bank',
+        'bank',
         'nm_rek',
         'nominal',
-        'image'
+        'image',
+        'status',
     ];
 }

@@ -23,7 +23,21 @@
                 </div>
             </div>
             <div class="col-md-12 col-lg-5 col-xl-6 mt-5 py-5 px-5 ">
-               <form action="" method="POST" class="">
+                @if ($errors->any())
+                          <div class="alert alert-danger">
+                           <ul>
+                             @foreach ($errors->all() as $error)
+                               <li>{{ $error }}</li>
+                             @endforeach
+                           </ul>
+                          </div>
+                 @endif
+                 @if (Session::get('notAllowed'))
+                    <div class="alert alert-danger w-100">
+                        {{ Session::get('notAllowed') }}
+                    </div>  
+                 @endif
+               <form action="/auth/login" method="POST" class="">
                     @method('POST')
                      @csrf
                      

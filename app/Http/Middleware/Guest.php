@@ -12,8 +12,13 @@ class Guest
     public function handle(Request $request, Closure $next)
     {
          if(Auth::check()) {
+            if(Auth::user()->role == 'user'){
+                return redirect()->route('createPayment')->with('notAllowed', 'Anda sudah login!');
+            }else{
+                return redirect('/admin/user')->with('notAllowed', 'Anda sudah login!');
+            }
             //kalau gak ada history login bakal dikembalikan ke halaman login dengan pesan error
-           return redirect()->route('auth.login')->with('notAllowed', 'Anda sudah login!');
+           
            }
            return $next($request);      
     }

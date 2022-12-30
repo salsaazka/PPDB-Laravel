@@ -58,13 +58,13 @@ class PpdbController extends Controller
             'referensi' =>$request->referensi,
         ]);
 
-        $user = [
+        User::create ([
             'ppdb_id' => Ppdb::latest()->first()->id,
             'email' => $request->email,
             'password' => Hash::make($request->nisn),
-        ];
+        ]);
 
-        DB::table('users')->insert($user);
+        // DB::table('users')->insert($user);
         return redirect()->route('export.pdf')->with('success', 'Anda berhasil membuat akun!');
 
     }
@@ -102,14 +102,28 @@ class PpdbController extends Controller
          $user = $request->only('email', 'password');
          //auth fitur untuk menyimpan data dari login user 
          if (Auth::attempt($user)) {
-             return redirect()->route('');
+            if(Auth::user()->role == 'user'){
+                return redirect()->route('createPayment');
+            }else{
+                return redirect('/admin/dashboard');
+            }
          } else {
              return redirect('/')->with('fail', 'Gagal login, silahkan periksa dan coba lagi!');
          }
  
      }
 
-     
+     public function logout()
+     {
+         //menghapus history login
+         Auth::logout();
+         //mengarahkan ke halaman login
+         return redirect('/login');
+     }
+
+     public function error(){
+        return view('error');
+     }
     public function show(Ppdb $ppdb)
     {
         //

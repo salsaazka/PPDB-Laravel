@@ -18,12 +18,18 @@
             <th><h6>Nama</h6></th>
             <th><h6>NISN</h6></th>
             <th><h6>Jenis Kelamin</h6></th>
+        </tr>
+        <tr>
             <th><h6>Sekolah</h6></th>
             <th><h6>Sekolah Lainnya</h6></th>
             <th><h6>Email</h6></th>
+        </tr>
+        <tr>
             <th><h6>No. Telp</h6></th>
             <th><h6>No. Telp Ayah</h6></th>
             <th><h6>No. Telp Ibu</h6></th>
+        </tr>
+        <tr>
             <th><h6>Referensi<h6></th>
             <th><h6>Password<h6></th>
             <th><h6>Email<h6></th>
