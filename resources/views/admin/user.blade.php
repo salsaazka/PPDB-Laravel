@@ -37,7 +37,10 @@
                             <td>{{ $key + 1 }}</td>
                             <td>{{ $item['ppdb_id'] }}</td>
                             <td>{{ $item['nm_bank'] }}</td>
-                            <td><a href="">Lihat</a></td>
+                            <td><button class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalImage" data-image="{{ $item['image'] }}">
+                                Lihat
+                              </button>
+                              </td>
                             <td><a href="">Detail</a></td>
                             <td>
                                 <div class="ml-auto">
@@ -55,7 +58,7 @@
                                         </form>
                                       </div>
                                     @else
-                                        {{ $item['status'] }} 
+                                        {{ $item['status'] }}
                                     @endif
                                     {{-- @if (is_null($bayar = 'Diproses')) --}}
 
@@ -76,6 +79,21 @@
             </table>
         </div>
     </div>
+
+    <div class="modal fade" id="modalImage" tabindex="-1" aria-labelledby="modalImageLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalImageLabel">Lihat</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="imgContent">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
 @endsection
 
 @section('js')
@@ -85,6 +103,15 @@
                 "info": false,
                 "bSort": false,
             });
+        });
+    </script>
+
+    <script>
+        $('#modalImage').on('shown.bs.modal', function(e) {
+            var html = `
+                <img src="{{ url('assets/img/global/${$(e.relatedTarget).data("image")}') }}" class="w-100">
+            `;
+            $('#imgContent').html(html);
         });
     </script>
 @endsection
