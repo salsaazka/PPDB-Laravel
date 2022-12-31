@@ -137,7 +137,9 @@
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
-                    <p>{{Auth::user()->email}} </p>
+                    <p class="mt-3">{{Auth::user()->email}}</p>
+                    <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
+                            alt=""></button>
                 </div>
             </div>
 

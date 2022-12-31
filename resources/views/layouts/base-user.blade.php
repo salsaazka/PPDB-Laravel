@@ -61,11 +61,11 @@
                     </svg>
 
                     <span>Dashboard</span>
-                   
+
                 </a>
 
-                
-        
+
+
                 <a href="{{ route('createPayment') }}" class="sidebar-item" onclick="toggleActive (this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -85,8 +85,8 @@
 
                     <span>Pembayaran</span>
                 </a>
-          
-               
+
+
 
                 <a href="/logout" class="sidebar-item" onclick="toggleActive(this)">
                     <!-- <img src="./assets/img/global/log-out.svg" alt=""> -->
@@ -124,16 +124,18 @@
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
+                    <p class="mt-3">{{Auth::user()->email}}</p>
                     <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
                             alt=""> </button>
-
-            <div class="content">    
-                <div class="card-body">
-                    @yield('content')
-                    
                 </div>
+        </div>
+        <div class="content">
+            <div class="card-body">
+                @yield('content')
+
             </div>
         </div>
+    </div>
     </div>
 
 
