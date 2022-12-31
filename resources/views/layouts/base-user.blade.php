@@ -61,12 +61,18 @@
                     </svg>
 
                     <span>Dashboard</span>
-                   
+
                 </a>
 
+<<<<<<< HEAD
                 
         
                 <a href="/createPayment" class="sidebar-item" onclick="toggleActive (this)">
+=======
+
+
+                <a href="{{ route('createPayment') }}" class="sidebar-item" onclick="toggleActive (this)">
+>>>>>>> 9122492e95a6bf0ec1a5f3f9565144fb0a9e0c67
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -85,8 +91,8 @@
 
                     <span>Pembayaran</span>
                 </a>
-          
-               
+
+
 
                 <a href="/logout" class="sidebar-item" onclick="toggleActive(this)">
                     <!-- <img src="./assets/img/global/log-out.svg" alt=""> -->
@@ -135,8 +141,8 @@
                     @yield('content')
 
                 </div>
-            </div>
         </div>
+    </div>
     </div>
 
     {{-- Jquery --}}

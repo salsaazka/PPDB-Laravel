@@ -63,7 +63,7 @@
                                     @else
                                         {{ $item['status'] }}
                                     @endif
-                                    
+
                                 </div>
                             </td>
                         </tr>
