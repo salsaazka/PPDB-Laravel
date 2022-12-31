@@ -94,6 +94,7 @@ class PpdbController extends Controller
              //required data harus diisi
              'email' => 'required|exists:users,email',
              'password' => 'required',
+             
          ],
          [
              'email.exists' => "email ini tidak tersedia"
@@ -104,9 +105,9 @@ class PpdbController extends Controller
          //auth fitur untuk menyimpan data dari login user 
          if (Auth::attempt($user)) {
             if(Auth::user()->role == 'user'){
-                return redirect()->route('createPayment');
+                return redirect()->route('userDash');
             }else{
-                return redirect('/admin/dashboard');
+                return redirect()->route('adminDash');
             }
          } else {
              return redirect('/')->with('fail', 'Gagal login, silahkan periksa dan coba lagi!');
@@ -127,7 +128,10 @@ class PpdbController extends Controller
      }
     public function show(Ppdb $ppdb)
     {
-        //
+        $item = Ppdb::find($id);
+        return response()->json([
+            'data' => $item
+        ]);
     }
 
 

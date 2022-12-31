@@ -70,13 +70,18 @@ class PaymentController extends Controller
             'status' => 'Diproses',
             'ppdb_id' => Auth::user()->ppdb_id,
          ]);
-         return redirect()->route('createPayment')->with('Success', 'Bukti Pembayaran Anda sedang di proses');
+         return redirect()->route('payment')->with('Success', 'Bukti Pembayaran Anda sedang di proses');
     }
 
 
     public function show(Payment $payment)
     {
-
+      
+        // $item = Payment::find($id);
+        // return response()->json([
+        //     'data' => $item
+        // ]);
+    
     }
 
     public function reject($id)
@@ -131,7 +136,7 @@ class PaymentController extends Controller
             'status' => 'Ditolak',
             'ppdb_id' => Auth::user()->ppdb_id,
          ]);
-         return redirect()->route('userDash')->with('notSuccess', 'Bukti Pembayaran Anda ditolak oleh Admin');
+         return redirect()->route('updatePayment')->with('notSuccess', 'Bukti Pembayaran Anda ditolak oleh Admin');
 
     }
 

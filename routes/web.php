@@ -30,6 +30,7 @@ Route::get('/createPayment', [PaymentController::class, 'createPayment'])->name(
 Route::post('/payment', [PaymentController::class, 'store'])->name('payment');
 Route::patch('/payment', [PaymentController::class, 'update'])->name('updatePayment');
 Route::get('/user/dashboard', [PaymentController::class, 'userDash'])->name('userDash');
+Route::get('/detail/{id}', [PpdbController::class, 'show'])->name('detail');
 });
 
 Route::middleware(['Login', 'Role:admin'])->group(function(){

@@ -74,6 +74,6 @@
         </li>
         
     </ol>
-    <p>Silahkan untuk <a href="/login"><b>Login</b>disini!</a></p>
+    <p>Silahkan untuk <a href="http://127.0.0.1:8000/login"><b>Login</b></a> disini!</p>
 </body>
 </html>

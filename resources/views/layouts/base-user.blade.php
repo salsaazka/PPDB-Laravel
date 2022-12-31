@@ -42,7 +42,7 @@
                     </button> --}}
                 </a>
 
-                <h5 class="sidebar-title">TP. 2022-2024</h5>
+                <h5 class="sidebar-title">TP. 2023-2024</h5>
 
                 <!-- <a href="./index.html" class="sidebar-item" onclick="toggleActive(this)"> -->
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
@@ -66,7 +66,7 @@
 
                 
         
-                <a href="{{ route('createPayment') }}" class="sidebar-item" onclick="toggleActive (this)">
+                <a href="/createPayment" class="sidebar-item" onclick="toggleActive (this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -130,15 +130,14 @@
                 </div>
             </div>
 
-            <div class="content">    
+            <div class="content">
                 <div class="card-body">
                     @yield('content')
-                    
+
                 </div>
             </div>
         </div>
     </div>
-
 
     {{-- Jquery --}}
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"

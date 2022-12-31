@@ -3,15 +3,13 @@
 @section('title', 'Hai, Student!')
 
 @section('content')
+@if (Session::get('notSuccess'))
+    <div class="alert alert-danger w-100">
+        {{ Session::get('notSuccess') }}
+     </div>
+ @endif
 
-@if($bayar['status'] == 'Ditolak' )
-<div class="alert alert-danger w-100">
-   Pembayaran Anda ditolak oleh Admin!
-</div> 
-@endif 
-
-<h3 class="text-primary">Hai, {{ Auth::user()->name }}!</h3>
-<p class="text-muted">Selamat Datang!</p>
+<p class="text-muted"><b>{{ Auth::user()->name }}</b> Selamat Datang!</p>
 @endsection
 
 

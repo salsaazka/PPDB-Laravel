@@ -41,7 +41,10 @@
                                 Lihat
                               </button>
                               </td>
-                            <td><a href="">Detail</a></td>
+                            <td>
+                                <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $item['id'] }}">
+                                    <i class="fa-sharp fa-solid fa-eye"></i></button>
+                            </td>
                             <td>
                                 <div class="ml-auto">
                                     @if ($item['status'] == 'Diproses')
@@ -84,6 +87,22 @@
         </div>
       </div>
 
+      <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Data Registrasi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="look">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 @endsection
 
 @section('js')
@@ -103,5 +122,29 @@
             `;
             $('#imgContent').html(html);
         });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+        $('body').on('click', '#detailData', function (event) {
+          event.preventDefault();
+          var id = $(this).data('id');
+          $.get('/detail/' + id, function (data) {
+            var detail = 
+            `<ul>
+              <li>Nama: ${data.data.name}</li>
+              <li>NISN: ${data.data.nisn}</li>
+              <li>Jenis  Kelamin: ${data.data.jk}</li>
+              <li>Asal Sekolah: ${data.data.school}</li>
+              <li>Asal Sekolah Lainnya: ${data.data.sch}</li>
+              <li>Email: ${data.data.email}</li>
+              <li>No. HP: ${data.data.no_telp}</li>
+              <li>No. HP Ayah: ${data.data.no_telpA}</li>
+              <li>No. HP Ibu: ${data.data.no_telpB}</li>
+            </ul>`;
+            $('#look').html(detail);
+          })
+        })
+      })
     </script>
 @endsection
