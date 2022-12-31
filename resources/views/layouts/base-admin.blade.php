@@ -139,41 +139,7 @@
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
                     <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
                             alt=""></button>
-                            @if (Auth::check())
-                            <form class="d-flex" role="search">
-                             <div class="nav-item dropdown" >
-                                <a class="nav-link dropdown-toggle" href="#" role="button" style="color:white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    </i> {{Auth::user()->name}} 
-                                 </a>
-          
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/admin/dashboard">
-                                <i class="fa-solid fa-house" style="text-primary"></i> Dashboard
-                            </a></li>
-                             <li><a class="dropdown-item" href="/admin/user">
-                                <i class="fa-solid fa-user" style="text-primary"></i> Data Pembayaran
-                            </a></li>
-                             @if (Auth::user()->role == 'admin')
-                             <li>
-                            <a class="dropdown-item" href="/todo/contact" >
-                                <i class="fas fa-server" style="text-primary"></i> Data Contact Us
-                            </a>
-                            </li>
-                        @endif
-                             <li>
-                             <a class="dropdown-item" href="/logout" >
-                                 <i class="fas fa-sign-out-alt" style="text-primary"></i>  Logout
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-                    </form>
-                    </div>
-           
-                 </div>
-            @endif
-         </div>
-        </div>
+                             {{-- {{Auth::user()->name}}  --}}
                 </div>
             </div>
           
