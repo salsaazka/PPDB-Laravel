@@ -61,9 +61,9 @@
                     </svg>
 
                     <span>Dashboard</span>
-                   
-                </a>               
-        
+
+                </a>
+
                 <a href="/admin/user" class="sidebar-item" onclick="toggleActive (this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,7 @@
 
                     <span>Data Pembayaran</span>
                 </a>
-          
+
                 <a href="/admin/contact" class="sidebar-item" onclick="toggleActive(this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@
                     </svg>
 
                     <span>Data Contact Us</span>
-                   
+
                 </a>
 
                 <a href="/logout" class="sidebar-item" onclick="toggleActive(this)">
@@ -137,17 +137,15 @@
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
-                    <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
-                            alt=""></button>
-                             {{-- {{Auth::user()->name}}  --}}
+                    <p>{{Auth::user()->email}} </p>
                 </div>
             </div>
-          
 
-            <div class="content">    
+
+            <div class="content">
                 <div class="card-body">
                     @yield('content')
-                    
+
                 </div>
             </div>
         </div>
