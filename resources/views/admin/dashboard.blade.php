@@ -15,7 +15,8 @@
         </div>    
      
  @endif 
-
+ 
+ <p class="text-muted">Selamat Datang!</p>
 @endsection
 
 

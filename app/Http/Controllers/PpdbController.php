@@ -61,6 +61,7 @@ class PpdbController extends Controller
         User::create ([
             'ppdb_id' => Ppdb::latest()->first()->id,
             'email' => $request->email,
+            'name' => $request->name,
             'password' => Hash::make($request->nisn),
         ]);
 

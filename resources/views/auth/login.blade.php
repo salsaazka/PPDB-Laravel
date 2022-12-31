@@ -19,10 +19,10 @@
         <div class="d-flex flex row">
             <div class="col-lg-6 mb-5" >
                 <div class="card">
-                    <img src="{{ asset('assets/img/employees/foto login.jpg') }}" alt="" class="w-100">
+                    <img src="{{ asset('assets/img/employees/foto login.jpg') }}" alt="" class="">
                 </div>
             </div>
-            <div class="col-md-12 col-lg-5 col-xl-6 mt-5 py-5 px-5 ">
+            <div class="col-md-12 col-lg-5 col-xl-6 px-5 ">
                 @if ($errors->any())
                           <div class="alert alert-danger">
                            <ul>

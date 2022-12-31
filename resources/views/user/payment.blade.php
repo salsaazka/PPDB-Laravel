@@ -4,9 +4,9 @@
 
 @section('content')
     <div class="">
-        @if (Session::get('notAllowed'))
+        @if (Session::get('notSuccess'))
             <div class="alert alert-danger w-100">
-                {{ Session::get('notAllowed') }}
+                {{ Session::get('notSuccess') }}
              </div>  
         @endif
         @if ($errors->any())
