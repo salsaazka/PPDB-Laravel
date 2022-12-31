@@ -36,6 +36,7 @@ Route::middleware(['Login', 'Role:admin'])->group(function(){
 Route::get('/admin/user', [PaymentController::class, 'index'])->name('index');
 Route::get('/admin/dashboard', [PaymentController::class, 'adminDash'])->name('adminDash');
 Route::get('/data', [PaymentController::class, 'data'])->name('data');
-Route::get('/edit/{id}', [PaymentController::class, 'edit'])->name('edit');
+Route::patch('/reject/{id}', [PaymentController::class, 'reject'])->name('reject');
+Route::patch('/approved/{id}', [PaymentController::class, 'approved'])->name('approved');
 Route::patch('/update/{id}', [PaymentController::class, 'update'])->name('update');
 });

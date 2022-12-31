@@ -78,12 +78,21 @@ class PaymentController extends Controller
 
     }
 
-    // public function edit($id)
-    //  {
-    //     $payment = Payment::where('id', $id)->first();
-    //     return view('admin.user', compact('payment'));
-    //  }
+    public function reject($id)
+    {
+        $payment = Payment::where('id', $id)->first();
+        $payment->status = 'Ditolak';
+        $payment->save();
+        return redirect()->back()->with('notSuccess', 'Bukti Pembayaran Ditolak');
+    }
 
+    public function approved($id)
+    {
+        $payment = Payment::where('id', $id)->first();
+        $payment->status = 'Diterima';
+        $payment->save();
+        return redirect()->back()->with('Success', 'Bukti Pembayaran Diterima');
+    }
 
     public function data()
     {
