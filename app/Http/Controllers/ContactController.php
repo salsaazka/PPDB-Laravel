@@ -39,13 +39,11 @@ class ContactController extends Controller
         return view('landing.home')->with('success', 'Anda berhasil membuat pesan!');
 
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
+    public function adminContact()
+    {
+         $contact = Contact::all();
+         return view('admin.contact', compact('contact'))->with('i', (request()->input('page',1)-1));
+    }
     public function show(Contact $contact)
     {
         //

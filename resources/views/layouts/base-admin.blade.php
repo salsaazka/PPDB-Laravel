@@ -42,7 +42,7 @@
                     </button> --}}
                 </a>
 
-                <h5 class="sidebar-title">Hai</h5>
+                <h5 class="sidebar-title">TP. 2022-2024</h5>
 
                 <!-- <a href="./index.html" class="sidebar-item" onclick="toggleActive(this)"> -->
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
@@ -62,9 +62,7 @@
 
                     <span>Dashboard</span>
                    
-                </a>
-
-                
+                </a>               
         
                 <a href="/admin/user" class="sidebar-item" onclick="toggleActive (this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -86,7 +84,22 @@
                     <span>Data Pembayaran</span>
                 </a>
           
-               
+                <a href="/admin/contact" class="sidebar-item" onclick="toggleActive(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 14H14V21H21V14Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10 14H3V21H10V14Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 3H14V10H21V3Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10 3H3V10H10V3Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Data Contact Us</span>
+                   
+                </a>
 
                 <a href="/logout" class="sidebar-item" onclick="toggleActive(this)">
                     <!-- <img src="./assets/img/global/log-out.svg" alt=""> -->
@@ -126,7 +139,41 @@
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
                     <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
                             alt=""></button>
-                             {{-- {{Auth::user()->name}}  --}}
+                            @if (Auth::check())
+                            <form class="d-flex" role="search">
+                             <div class="nav-item dropdown" >
+                                <a class="nav-link dropdown-toggle" href="#" role="button" style="color:white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    </i> {{Auth::user()->name}} 
+                                 </a>
+          
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/admin/dashboard">
+                                <i class="fa-solid fa-house" style="text-primary"></i> Dashboard
+                            </a></li>
+                             <li><a class="dropdown-item" href="/admin/user">
+                                <i class="fa-solid fa-user" style="text-primary"></i> Data Pembayaran
+                            </a></li>
+                             @if (Auth::user()->role == 'admin')
+                             <li>
+                            <a class="dropdown-item" href="/todo/contact" >
+                                <i class="fas fa-server" style="text-primary"></i> Data Contact Us
+                            </a>
+                            </li>
+                        @endif
+                             <li>
+                             <a class="dropdown-item" href="/logout" >
+                                 <i class="fas fa-sign-out-alt" style="text-primary"></i>  Logout
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </form>
+                    </div>
+           
+                 </div>
+            @endif
+         </div>
+        </div>
                 </div>
             </div>
           
