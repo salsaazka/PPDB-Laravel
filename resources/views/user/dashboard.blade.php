@@ -10,7 +10,8 @@
 </div> 
 @endif 
 
-
+<h3 class="text-primary">Hai, {{ Auth::user()->name }}!</h3>
+<p class="text-muted">Selamat Datang!</p>
 @endsection
 
 

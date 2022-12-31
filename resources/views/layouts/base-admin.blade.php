@@ -137,12 +137,15 @@
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
+<<<<<<< HEAD
                     <p class="mt-3">{{Auth::user()->email}}</p>
+=======
+                    <p class="mt-3">{{Auth::user()->name}}</p>
+>>>>>>> 2984d29a1cb10568dc27e59acbe480ec031e440d
                     <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
                             alt=""></button>
                 </div>
             </div>
-
 
             <div class="content">
                 <div class="card-body">
