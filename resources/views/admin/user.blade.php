@@ -1,6 +1,6 @@
 @extends('layouts.base-admin')
 
-@section('title', '')
+@section('title', 'Data Pembayaran')
 
 @section('content')
     <div>
@@ -24,11 +24,11 @@
                 <thead>
                     <tr>
                         <th style="width: 5%">No</th>
-                        <th style="width: 10%">Nomor Registrasi</th>
+                        <th style="width: 10%">No. Registrasi</th>
                         <th style="width: 20%">Nama</th>
                         <th style="width: 10%">Bukti Pembayaran</th>
                         <th style="width: 10%">Detail Pembayaran</th>
-                        <th style="width: 10%">Aksi</th>
+                        <th style="width: 15%">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,17 +57,7 @@
                                     @else
                                         {{ $item['status'] }} 
                                     @endif
-                                    {{-- @if (is_null($bayar = 'Diproses')) --}}
-
-                                    {{-- <form action="{{ route('update', $id) }}" method="POST">
-                                        @method('PATCH')
-                                        @csrf
-                                        <button type="submit" class="fa-sharp fa-solid fa-arrow-rotate-left"
-                                        style="border: none; background:none;">
-                                        </button>
-                                    </form> --}}
-                                    {{-- <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $borrow['id'] }}">
-                                        <i class="fa-sharp fa-solid fa-eye"></i></button> --}}
+                                    
                                 </div>
                             </td>
                         </tr>

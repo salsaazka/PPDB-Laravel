@@ -1,6 +1,6 @@
 @extends('layouts.base-user')
 
-@section('title', '')
+@section('title', 'Hai, Student!')
 
 @section('content')
 

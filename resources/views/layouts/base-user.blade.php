@@ -42,7 +42,7 @@
                     </button> --}}
                 </a>
 
-                <h5 class="sidebar-title"></h5>
+                <h5 class="sidebar-title">TP. 2022-2024</h5>
 
                 <!-- <a href="./index.html" class="sidebar-item" onclick="toggleActive(this)"> -->
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
@@ -125,11 +125,7 @@
 
                 <div class="d-flex justify-content-between align-items-center nav-input-container">
                     <button class="btn-notif d-none d-md-block"><img src="{{ url('assets/img/global/person.svg') }}"
-                            alt=""></button>
-                             {{-- {{Auth::user()->name}}  --}}
-                </div>
-            </div>
-          
+                            alt=""> </button>
 
             <div class="content">    
                 <div class="card-body">

@@ -35,6 +35,7 @@ Route::get('/user/dashboard', [PaymentController::class, 'userDash'])->name('use
 Route::middleware(['Login', 'Role:admin'])->group(function(){
 Route::get('/admin/user', [PaymentController::class, 'index'])->name('index');
 Route::get('/admin/dashboard', [PaymentController::class, 'adminDash'])->name('adminDash');
+Route::get('/admin/contact', [ContactController::class, 'adminContact'])->name('adminContact');
 Route::get('/data', [PaymentController::class, 'data'])->name('data');
 Route::patch('/reject/{id}', [PaymentController::class, 'reject'])->name('reject');
 Route::patch('/approved/{id}', [PaymentController::class, 'approved'])->name('approved');

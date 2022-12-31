@@ -27,6 +27,7 @@ class PaymentController extends Controller
         return view('admin.dashboard', compact('look'));
    }
 
+  
     public function create()
     {
 
