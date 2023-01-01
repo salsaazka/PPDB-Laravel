@@ -65,11 +65,11 @@
                                     @else
                                         {{ $item['status'] }}
                                     @endif
-
+                                    
                                 </div>
                             </td>
                         </tr>
-                    @endforeach
+                        @endforeach
                 </tbody>
             </table>
         </div>
@@ -97,7 +97,6 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="look">
-
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -105,6 +104,7 @@
           </div>
         </div>
       </div>
+    
 @endsection
 
 @section('js')
@@ -126,7 +126,7 @@
         });
     </script>
 
-    <script>
+    {{-- <script>
         $(document).ready(function () {
         $('body').on('click', '#detailData', function (event) {
           event.preventDefault();
@@ -142,11 +142,11 @@
               <li>Email: ${data.data.email}</li>
               <li>No. HP: ${data.data.no_telp}</li>
               <li>No. HP Ayah: ${data.data.no_telpA}</li>
-              <li>No. HP Ibu: ${data.data.no_telpB}</li>
+              <li>No. HP Ibu: ${data.no_telpB}</li>
             </ul>`;
             $('#look').html(detail);
           })
         })
       })
-    </script>
+    </script> --}}
 @endsection
