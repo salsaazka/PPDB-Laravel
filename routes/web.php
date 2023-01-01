@@ -28,7 +28,7 @@ Route::get('/error', [PpdbController::class, 'error'])->name('error');
 Route::middleware(['Login', 'Role:user'])->group(function(){
 Route::get('/createPayment', [PaymentController::class, 'createPayment'])->name('createPayment');
 Route::post('/payment', [PaymentController::class, 'store'])->name('payment');
-Route::patch('/payment', [PaymentController::class, 'update'])->name('updatePayment');
+Route::patch('/updategit/payment', [PaymentController::class, 'update'])->name('updatePayment');
 Route::get('/user/dashboard', [PaymentController::class, 'userDash'])->name('userDash');
 
 });

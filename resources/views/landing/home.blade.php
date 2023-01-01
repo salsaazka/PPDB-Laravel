@@ -220,25 +220,36 @@
                 <div class="hr"></div>
                 <div class="slick">
                     <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2000</span></h1>
+                        <p class="text-primary">AKHMAD MUNITO</p>
+                        <p>Maju terus Wikrama, dengan sekolah di Wikrama saya dibekali ilmu yang sangat bermanfaat .</p>
+                        <p class="text-primary">Administrasi Perkantoran (APK)</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2011</span></h1>
+                        <p class="text-primary">LUTFI HAKIM</p>
+                        <p>SMK Wikrama bukan hanya menjadikan siswanya untuk masuk ke dunia kerja, melainkan melebihi dari apa yang dibutuhkan di dunia kerja pada umumnya.</p>
+                        <p class="text-primary">Rekayasa Perangkat Lunak (RPL)</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2016</span></h1>
+                        <p class="text-primary">KAMALUDIN</p>
+                        <p>Menerapkan sistem pembelajaran yang baik, efektif dan berbasis TI yang sangat memudahkan siswa.</p>
+                        <p class="text-primary">Rekayasa Perangkat Lunak (RPL)</p>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-orange"><span class="bg-light">2017</span></h1>
+                        <p class="text-primary">SYAFITRI</p>
+                        <p>Menerapkan sistem pembelajaran yang baik, efektif dan berbasis TI yang sangat memudahkan siswa.</p>
+                        <p class="text-primary">Rekayasa Perangkat Lunak (RPL)</p>
+                    </div>
+                    <div class="desc">
                         <h1 class="text-orange"><span class="bg-light">2018</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
+                        <p class="text-primary">TIFANI</p>
+                        <p>Menerapkan sistem pembelajaran yang baik, efektif dan berbasis TI yang sangat memudahkan siswa.</p>
+                        <p class="teXt-primary">Rekayasa Perangkat Lunak (RPL)</p>
                     </div>
-                    <div class="desc">
-                        <h1 class="text-orange"><span class="bg-light">2019</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-orange"><span class="bg-light">2020</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-orange"><span class="bg-light">2021</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-orange"><span class="bg-light">2022</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur fugit voluptatem omnis natus voluptatum, at laudantium modi aperiam quam? Aliquam quae blanditiis consequatur. Saepe, a distinctio. Ducimus, aspernatur dolor?</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
