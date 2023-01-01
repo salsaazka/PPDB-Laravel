@@ -260,7 +260,7 @@
                         <p>Jl. Raya Wangun No.21, RT.01/RW.06, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
                         CS 1: <a href="https://wa.me/6281909242411" class="text-light bold"><b>Hubungi Kami Disini</b></a><br>
                         CS 2: <a href="https://wa.me/6281919242411" class="text-light"><b>Hubungi Kami Disini</b></a><br><br>
-                        <a href="/aut/register" class="btn btn-warning rounded-pill p-2 text-white">
+                        <a href="/auth/register" class="btn btn-warning rounded-pill p-2 text-white">
                             Daftar Sekarang
                         </a>
                     </div>
