@@ -41,4 +41,7 @@ Route::get('/data', [PaymentController::class, 'data'])->name('data');
 Route::patch('/reject/{id}', [PaymentController::class, 'reject'])->name('reject');
 Route::patch('/approved/{id}', [PaymentController::class, 'approved'])->name('approved');
 Route::patch('/update/{id}', [PaymentController::class, 'update'])->name('update');
+// detail
+Route::get('admin/image/{id}', [PaymentController::class, 'image'])->name('image');
+Route::get('admin/detail/{id}', [PaymentController::class, 'detail'])->name('detail');
 });

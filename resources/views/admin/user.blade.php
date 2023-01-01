@@ -37,13 +37,15 @@
                             <td>{{ $key + 1 }}</td>
                             <td>{{ $item['ppdb_id'] }}</td>
                             <td>{{ $item['nm_bank'] }}</td>
-                            <td><button class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalImage" data-image="{{ $item['image'] }}">
-                                Lihat
-                              </button>
-                              </td>
                             <td>
-                                <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $item['id'] }}">
-                                    <i class="fa-sharp fa-solid fa-eye"></i></button>
+                                {{-- lempar ke halaman admin/image/id --}}
+                                <a href="{{ route('image', $item['id']) }}" class="btn btn-outline-primary">Lihat</a>
+                            </td>
+                            <td>
+                                {{-- lempar ke halaman admin/detail/id --}}
+                                <a href="{{ route('detail', $item['ppdb_id']) }}" class="btn btn-outline-primary">Lihat</a>
+                                {{-- <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $item['id'] }}">
+                                    <i class="fa-sharp fa-solid fa-eye"></i></button> --}}
                             </td>
                             <td>
                                 <div class="ml-auto">
@@ -95,7 +97,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="look">
-              
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -130,7 +132,7 @@
           event.preventDefault();
           var id = $(this).data('id');
           $.get('/detail/' + id, function (data) {
-            var detail = 
+            var detail =
             `<ul>
               <li>Nama: ${data.data.name}</li>
               <li>NISN: ${data.data.nisn}</li>
