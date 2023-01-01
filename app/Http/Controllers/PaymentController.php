@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Payment;
+use App\Models\Ppdb;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,7 +28,7 @@ class PaymentController extends Controller
         return view('admin.dashboard', compact('look'));
    }
 
-  
+
     public function create()
     {
 
@@ -76,12 +77,12 @@ class PaymentController extends Controller
 
     public function show(Payment $payment)
     {
-      
+
         // $item = Payment::find($id);
         // return response()->json([
         //     'data' => $item
         // ]);
-    
+
     }
 
     public function reject($id)
@@ -143,5 +144,18 @@ class PaymentController extends Controller
     public function destroy(Payment $payment)
     {
         //
+    }
+
+    public function image($id)
+    {
+        $payment = Payment::find($id);
+        return view('admin.image', compact('payment'));
+    }
+
+    // function detail PPDB
+    public function detail($id)
+    {
+        $Ppdb = Ppdb::find($id);
+        return view('admin.detail', compact('Ppdb'));
     }
 }
