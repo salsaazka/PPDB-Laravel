@@ -126,12 +126,15 @@ class PpdbController extends Controller
      public function error(){
         return view('error');
      }
+
     public function show(Ppdb $ppdb)
     {
-        $item = Ppdb::find($id);
-        return response()->json([
-            'data' => $item
-        ]);
+        $data= Ppdb::where('ppdb_id', Auth::user()->ppdb_id)->first();
+        // $data = Ppdb::find($id);
+        // return response()->json([
+        //     'data' => $data
+        // ]);
+        return view('admin.user', compact('data'));
     }
 
 

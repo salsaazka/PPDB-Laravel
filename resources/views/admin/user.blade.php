@@ -37,12 +37,13 @@
                             <td>{{ $key + 1 }}</td>
                             <td>{{ $item['ppdb_id'] }}</td>
                             <td>{{ $item['nm_bank'] }}</td>
-                            <td><button class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalImage" data-image="{{ $item['image'] }}">
+                            <td>
+                                <button class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalImage" data-image="{{ $item['image'] }}">
                                 Lihat
                               </button>
                               </td>
                             <td>
-                                <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $item['id'] }}">
+                                <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $item['id'] }}" href="">
                                     <i class="fa-sharp fa-solid fa-eye"></i></button>
                             </td>
                             <td>
@@ -63,11 +64,11 @@
                                     @else
                                         {{ $item['status'] }}
                                     @endif
-
+                                    
                                 </div>
                             </td>
                         </tr>
-                    @endforeach
+                        @endforeach
                 </tbody>
             </table>
         </div>
@@ -95,7 +96,9 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="look">
-              
+              <ul>
+                <li>{{ $item['name'] }}</li>
+              </ul>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -103,6 +106,7 @@
           </div>
         </div>
       </div>
+    
 @endsection
 
 @section('js')
@@ -124,7 +128,7 @@
         });
     </script>
 
-    <script>
+    {{-- <script>
         $(document).ready(function () {
         $('body').on('click', '#detailData', function (event) {
           event.preventDefault();
@@ -140,11 +144,11 @@
               <li>Email: ${data.data.email}</li>
               <li>No. HP: ${data.data.no_telp}</li>
               <li>No. HP Ayah: ${data.data.no_telpA}</li>
-              <li>No. HP Ibu: ${data.data.no_telpB}</li>
+              <li>No. HP Ibu: ${data.no_telpB}</li>
             </ul>`;
             $('#look').html(detail);
           })
         })
       })
-    </script>
+    </script> --}}
 @endsection
