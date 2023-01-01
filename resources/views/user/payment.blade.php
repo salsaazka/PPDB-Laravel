@@ -59,7 +59,7 @@
         </form>
         @endif
 
-        @if($bayar['status'] == 'Diproses' )
+        {{-- @if($bayar['status'] == 'Diproses' )
          <div class="alert alert-primary w-100">
             Pembayaran Anda sedang di proses oleh Admin!
          </div> 
@@ -71,8 +71,8 @@
          </div> 
          @endif 
       
-         @if($bayar['status'] == 'Ditolak')
-         <form action="{{ route('payment') }}" method="post"  enctype="multipart/form-data">
+         @if($bayar['status'] == 'Ditolak') --}}
+         {{-- <form action="{{ route('payment') }}" method="post"  enctype="multipart/form-data">
             @csrf
             @method('PATCH')
             <div class="row">
@@ -108,8 +108,8 @@
                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
             </div>
              <button type="submit" class="btn btn-primary offset-9">Upload Bukti Pembayaran</button>
-        </form>
-        @endif
+        </form> --}}
+        {{-- @endif --}}
        
     </div>
 @endsection
