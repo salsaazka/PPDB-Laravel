@@ -4,76 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PDF</title>
-    <style>
-    
-    </style>
+    <title>Data Registrasi PPDB</title>
 </head>
 <body>
-    <h1>Data Registrasi PPDB TP.2023-2024</h1>
-    <ol>
-        <li>Nama
-            <ul>
-                <li>{{ $Ppdb['name'] }}</li>
-            </ul>
-        </li>
-        <li>NISN
-            <ul>
-                <li>{{ $Ppdb['nisn'] }}</li>
-            </ul>
-        </li>
-        <li>Jenis Kelamin
-            <ul>
-                <li>{{ $Ppdb['jk'] }}</li>
-            </ul>
-        </li>
-        <li>Sekolah
-            <ul>
-                <li>{{ $Ppdb['school'] }}</li>
-            </ul>
-        </li>
-        <li>Sekolah Lainnya
-            <ul>
-                <li>{{ $Ppdb['sch'] }}</li>
-            </ul>
-        </li>
-        <li>Email
-            <ul>
-                <li>{{ $Ppdb['email'] }}</li>
-            </ul>
-        </li>
-        <li>No.Telp
-            <ul>
-                <li>{{ $Ppdb['no_telp'] }}</li>
-            </ul>
-        </li>
-        <li>No. Telp Ayah
-            <ul>
-                <li>{{ $Ppdb['no_telpA'] }}</li>
-            </ul>
-        </li>
-        <li>No. Telp Ibu
-            <ul>
-                <li>{{ $Ppdb['no_telpB'] }}</li>
-            </ul>
-        </li>
-        <li>Referensi
-            <ul>
-                <li>{{ $Ppdb['referensi'] }}</li>
-            </ul>
-        </li>
-        <li>Password
-            <ul>
-                <li>Password yang digunakan berasal dari NISN</li>
-            </ul>
-        </li>
-        <li>Email
-            <ul>
-                <li>{{ $Ppdb['email'] }}</li>
-            </ul>
-        </li>
+    <br>
+<body style="font-family: sans-serif" onload="window.print()">
+    <center>
+        <table width="94%" border="0">
+            <tr>
+                <td rowspan="4" width="10%">
+                    <center>
+                        <div><img src="https://ppdb.smkwikrama.sch.id/img/wk.png" width="100px"></div>
+                    </center>
+                </td>
+                <td>
+                    <b>PENERIMAAN PESERTA DIDIK BARU</b><br>
+                    <b>SMK WIKRAMA BOGOR TP. 2023-2024</b><br>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <center><b>TANDA BUKTI PENDAFTARAN</b></center>
+    <center><b>SMK Wikrama Bogor TP. 2023-2024</b></center>
+    <br>
+    <table width="50%" border="0" style="margin-left:3%;margin-right:2%;float:left">
+        {{-- @foreach ($users as $item) --}}
+        @csrf
+        <tr>
+            <td colspan="3" style="padding: 10px 0;"></td>
+        </tr>
+       <center> <tr>
+            <td colspan="3" style="background-color: lightgray"><b>I. BIODATA CALON PESERTA DIDIK</b></td>
+        </tr>
+    </center>
+        <tr>
+            <td colspan="3" style="padding: 8px 0;"></td>
+        </tr>
         
-    </ol>
-    <p>Silahkan untuk <a href="http://127.0.0.1:8000/login"><b>Login</b></a> disini!</p>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>NOMOR SELEKSI</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb->id}}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>NAMA LENGKAP</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['name'] }}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>NISN</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['nisn'] }}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>ASAL SEKOLAH</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['school'] }}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>NO HP</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['no_telp'] }}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>EMAIL</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['email']}}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>NO HP Ayah</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['no_telpA'] }}</td>
+        </tr>
+        <tr>
+            <td width="30%" style="font-size: 13px"><b>NO HP Ibu</b></td>
+            <td width="3%">:</td>
+            <td>{{ $Ppdb['no_telpB'] }}</td>
+        </tr>
+        <tr>
+        <tr>
+            <td colspan="3" style="padding: 10px 0;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: lightgray"><b>II. INFORMASI</b></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 8px 0;"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><b>A. Akun Anda</b></td>
+        </tr>
+        <tr>
+            <td colspan="3">Akses<a style="font: blue; text-decoration: none;"
+                href="login"> http://127.0.0.1:8000/login</a>, Login gunakan
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">Username : {{$Ppdb['email']}} </td>
+    </tr>
+    <tr>
+
+        <td colspan="3">Password :{{$Ppdb['nisn']}}</td>
+    </tr>
+    <tr>
+        <td colspan="3">Akun ini digunakan untuk mengecek status pendaftaran pada SIM PPDB SMK Wikrama Bogor.
+        </td>
+    </tr>
+   
+</table>
+
+</body><div><img src="https://ppdb.smkwikrama.sch.id/img/qris.jpg" width="120px"></div>
+</td>
+</tr>
+<tr>
+<td>
+    Praktis transfer pembayaran biaya seleksi, bebas biaya admin gunakan QRIS"
+    scan barcode QRIS melalui Mobile Banking atau e-wallet
+</td>
+</tr>
+</table>
+<br>
+<table width="37%" border="0">
+
+
+</table>
+<br>
+<table width="37%" border="0" style="margin-left:60%;">
+
+
+</table>
+</body>
+    
 </body>
 </html>
