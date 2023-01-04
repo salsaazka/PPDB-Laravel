@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     {{-- End Bootstrap --}}
 </head>
-<body>
-    <div class="content-sign">
+<body > 
+    <div class="content-sign" style="min-height: 100vh">
         <div class="d-flex flex row">
-            <div class="col-lg-6 mb-5" >
+            <div class="col-lg-6" >
                 <div class="card">
                     <img src="{{ asset('assets/img/employees/foto login.jpg') }}" alt="" class="">
                 </div>
@@ -37,6 +37,11 @@
                         {{ Session::get('notAllowed') }}
                     </div>  
                  @endif
+                 <div class="pt-5">
+                    <h3 class="text-primary"><strong>Login</strong></h3>
+                    <h5 class="text-muted">Masuk ke akun PPDB mu</h5>
+                 </div>
+                
                <form action="/auth/login" method="POST" class="">
                     @method('POST')
                      @csrf

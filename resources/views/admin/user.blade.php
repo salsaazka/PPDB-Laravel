@@ -44,8 +44,7 @@
                             <td>
                                 {{-- lempar ke halaman admin/detail/id --}}
                                 <a href="{{ route('detail', $item['ppdb_id']) }}" class="btn btn-outline-primary">Lihat</a>
-                                {{-- <button style="padding-left: 7px" class="text-dark btn btn-outline-none" data-bs-toggle="modal" data-bs-target="#detail" id="detailData" data-id="{{ $item['id'] }}">
-                                    <i class="fa-sharp fa-solid fa-eye"></i></button> --}}
+                               
                             </td>
                             <td>
                                 <div class="ml-auto">

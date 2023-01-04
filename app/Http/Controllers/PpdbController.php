@@ -73,12 +73,14 @@ class PpdbController extends Controller
      //pdf
      public function createPDF()
      {
-         $Ppdb = Ppdb::orderBy('id', 'DESC')->first();
-         view()->share('Ppdb',$Ppdb);
+        //  $Ppdb = Ppdb::orderBy('id', 'DESC')->first();
+        //  view()->share('Ppdb',$Ppdb);
 
-         $pdf = PDF::loadView('pdf-view', $Ppdb->toArray());
-         // download PDF file with download method
-         return $pdf->download('ppdb.pdf');
+        //  $pdf = PDF::loadView('pdf-view', $Ppdb->toArray());
+        //  // download PDF file with download method
+        //  return $pdf->download('pdf-view');
+         $Ppdb= Ppdb::latest()->first();
+         return view('pdf-view', compact('Ppdb'));
      }
 
 
